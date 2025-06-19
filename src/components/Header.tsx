@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="relative bg-gradient-to-r from-indigo-600 via-purple-500 to-rose-500 text-white shadow-xl">
+    <header className="relative bg-gradient-to-r from-indigo-600 via-purple-500 to-rose-500 text-white shadow-xl hidden md:block">
       {/* Sparkle effect */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-5 left-10 w-4 h-4 bg-white rounded-full opacity-70 animate-pulse"></div>
@@ -36,8 +36,14 @@ export default function Header() {
               </li>
               <li>
                 <Link href="/glossaire" className="px-3 py-2 rounded-full hover:bg-white/20 transition-all flex items-center font-medium">
-                  <span className="hidden sm:inline">Glossaire</span>
+                  <span className="hidden sm:inline">Emojis</span>
                   <span className="sm:hidden">📖</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/glossaire-argot" className="px-3 py-2 rounded-full hover:bg-white/20 transition-all flex items-center font-medium">
+                  <span className="hidden sm:inline">Argot</span>
+                  <span className="sm:hidden">�️</span>
                 </Link>
               </li>
               <li>

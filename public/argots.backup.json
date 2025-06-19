@@ -1,0 +1,258 @@
+[
+  {
+    "mot": "tana",
+    "signification": "Expression pour dire qu'on abandonne ou qu'on arrête, comme 'stop' ou 'pitié'.",
+    "exemples": ["Ok, tana, j'arrête de te taquiner."]
+  },
+  {
+    "mot": "crush",
+    "signification": "Personne pour qui on a un faible ou dont on est amoureux(se).",
+    "exemples": ["J'ai un crush sur Alex."]
+  },
+  {
+    "mot": "boloss",
+    "signification": "Quelqu'un de naïf ou ridicule, souvent moqué.",
+    "exemples": ["Il a encore oublié ses clés, quel boloss !"]
+  },
+  {
+    "mot": "flemme",
+    "signification": "Manque de motivation, grosse paresse.",
+    "exemples": ["J'ai la flemme d'y aller ce soir."]
+  },
+  {
+    "mot": "bail",
+    "signification": "Affaire, histoire, situation. Peut aussi vouloir dire 'truc' ou 'chose'.",
+    "exemples": ["C'est quoi ce bail ?"]
+  },
+  {
+    "mot": "gamos",
+    "signification": "Voiture, généralement une grosse voiture ou une belle voiture.",
+    "exemples": ["Il s'est acheté un nouveau gamos."]
+  },
+  {
+    "mot": "poser un lapin",
+    "signification": "Ne pas venir à un rendez-vous sans prévenir.",
+    "exemples": ["Il m'a posé un lapin hier."]
+  },
+  {
+    "mot": "chanmé",
+    "signification": "Super, génial, stylé.",
+    "exemples": ["Ce film est chanmé !"]
+  },
+  {
+    "mot": "swag",
+    "signification": "Avoir du style, être cool.",
+    "exemples": ["Trop swag ta nouvelle veste."]
+  },
+  {
+    "mot": "vénère",
+    "signification": "Énervé, en colère (verlan de 'énervé').",
+    "exemples": ["Il était trop vénère après le match."]
+  },
+  {
+    "mot": "zbeul",
+    "signification": "Désordre, pagaille, situation chaotique.",
+    "exemples": ["C'était le zbeul dans le bus."]
+  },
+  {
+    "mot": "kiffer",
+    "signification": "Aimer beaucoup, prendre du plaisir à faire quelque chose.",
+    "exemples": ["Je kiffe trop ce jeu."]
+  },
+  {
+    "mot": "wesh",
+    "signification": "Salut, ça va ? Sert à interpeller ou saluer.",
+    "exemples": ["Wesh, tu fais quoi ?"]
+  },
+  {
+    "mot": "mytho",
+    "signification": "Menteur ou quelqu'un qui raconte des histoires.",
+    "exemples": ["Arrête de faire ta mytho !"]
+  },
+  {
+    "mot": "chill",
+    "signification": "Se détendre, être tranquille.",
+    "exemples": ["On se fait une aprèm chill ?"]
+  },
+  
+  {
+    "mot": "blackpillé",
+    "signification": "Se dit d'une personne ayant adopté l'idéologie 'blackpill', une vision désespérée et fataliste des relations homme/femme populaire dans la communauté incel. Pense que l'apparence physique est le seul déterminant pour les relations amoureuses.",
+    "exemples": ["Il est complètement blackpillé depuis qu'il traîne sur ces forums."],
+    "categorie": "Incel"
+  },
+  {
+    "mot": "redpill",
+    "signification": "Idéologie masculine prétendant 'voir la réalité' concernant les relations homme/femme, opposée au 'bluepill' (vision traditionnelle). Origine liée à Matrix (pilule rouge révélant la vérité).",
+    "exemples": ["Il s'est redpillé après sa rupture."],
+    "categorie": "Incel"
+  },
+  {
+    "mot": "chad",
+    "signification": "Dans le jargon incel, homme stéréotypiquement attirant et socialement dominant, opposé au 'virgin'. Terme utilisé avec mépris ou envie.",
+    "exemples": ["Les filles ne veulent sortir qu'avec des chads."],
+    "categorie": "Incel"
+  },
+  {
+    "mot": "normie",
+    "signification": "Personne ordinaire, considérée comme conformiste et peu originale. Terme péjoratif utilisé dans les communautés en ligne.",
+    "exemples": ["Ce réseau social est rempli de normies."],
+    "categorie": "Internet"
+  },
+  {
+    "mot": "ratio",
+    "signification": "Sur les réseaux sociaux, publier une réponse qui obtient plus d'interactions qu'un message original, considéré comme une défaite pour l'auteur initial.",
+    "exemples": ["Il s'est fait ratio par tous ses followers."],
+    "categorie": "Internet"
+  },
+  {
+    "mot": "doxx",
+    "signification": "Rechercher et publier des informations privées sur quelqu'un en ligne (adresse, téléphone, etc.) sans son consentement, souvent dans l'intention de nuire.",
+    "exemples": ["Il a menacé de me doxx après notre dispute en ligne."],
+    "categorie": "Cyberharcèlement"
+  },
+  {
+    "mot": "ghosting",
+    "signification": "Disparaître soudainement d'une relation ou conversation sans explication, en cessant de répondre à tous les messages.",
+    "exemples": ["On discutait tous les jours et puis d'un coup, ghosting complet."],
+    "categorie": "Communication"
+  },
+  {
+    "mot": "skeufs",
+    "signification": "Verlan de 'flic', désigne les policiers.",
+    "exemples": ["Les skeufs arrivent, rangez ça !"],
+    "categorie": "Autorité"
+  },
+  {
+    "mot": "taper un bédave",
+    "signification": "Fumer un joint de cannabis.",
+    "exemples": ["Tu veux taper un bédave avant la soirée ?"],
+    "categorie": "Drogue"
+  },
+  {
+    "mot": "coke",
+    "signification": "Cocaïne, une drogue stimulante.",
+    "exemples": ["Il a dépensé tout son argent dans la coke ce week-end."],
+    "categorie": "Drogue"
+  },
+  {
+    "mot": "ecsta",
+    "signification": "Abréviation d'ecstasy, une drogue de synthèse de type MDMA.",
+    "exemples": ["Il a pris un ecsta en teuf samedi."],
+    "categorie": "Drogue"
+  },
+  {
+    "mot": "beuh",
+    "signification": "Cannabis, marijuana.",
+    "exemples": ["Il cultive de la beuh chez lui."],
+    "categorie": "Drogue"
+  },
+  {
+    "mot": "trip",
+    "signification": "Expérience sous l'effet de drogues hallucinogènes comme le LSD.",
+    "exemples": ["Son trip aux champis a mal tourné."],
+    "categorie": "Drogue"
+  },
+  {
+    "mot": "defoncé",
+    "signification": "État d'une personne sous l'effet de drogues ou d'alcool.",
+    "exemples": ["Il était complètement défoncé à la soirée."],
+    "categorie": "Drogue"
+  },
+  {
+    "mot": "casser du sucre",
+    "signification": "Dire du mal de quelqu'un en son absence, critiquer.",
+    "exemples": ["Ils passent leur temps à casser du sucre sur le dos des profs."],
+    "categorie": "Communication"
+  },
+  {
+    "mot": "shark",
+    "signification": "Prédateur sexuel qui cible les mineurs sur internet.",
+    "exemples": ["Fais attention aux sharks sur les réseaux sociaux."],
+    "categorie": "Cyberharcèlement"
+  },
+  {
+    "mot": "revenge porn",
+    "signification": "Partage non consensuel de contenus intimes ou sexuels pour se venger ou nuire à une personne.",
+    "exemples": ["Son ex a fait du revenge porn après leur rupture."],
+    "categorie": "Cyberharcèlement"
+  },
+  {
+    "mot": "incel",
+    "signification": "Abréviation de 'involuntary celibate' (célibataire involontaire), désigne des hommes qui blâment les femmes et la société pour leur manque de relations amoureuses.",
+    "exemples": ["Il poste des théories incel sur les forums."],
+    "categorie": "Incel"
+  },
+  {
+    "mot": "stalk",
+    "signification": "Surveiller obsessivement quelqu'un en ligne, consulter tous ses profils et publications de façon compulsive.",
+    "exemples": ["Elle stalke son ex sur tous les réseaux."],
+    "categorie": "Cyberharcèlement"
+  },
+  {
+    "mot": "catfish",
+    "signification": "Créer une fausse identité en ligne, notamment pour séduire ou manipuler quelqu'un.",
+    "exemples": ["Il s'est fait catfish par un profil qui utilisait des photos de mannequin."],
+    "categorie": "Cyberharcèlement"
+  },
+  {
+    "mot": "gaz",
+    "signification": "Très bien, excellent. Peut aussi signifier avoir beaucoup d'énergie ou d'enthousiasme.",
+    "exemples": ["Le concert était gaz !"],
+    "categorie": "Appréciation"
+  },
+  {
+    "mot": "cringy",
+    "signification": "Embarrassant, qui provoque un malaise ou de la gêne.",
+    "exemples": ["Sa déclaration était tellement cringy."],
+    "categorie": "Appréciation"
+  },
+  {
+    "mot": "se tf",
+    "signification": "Se transformer, généralement en référence à une colère soudaine.",
+    "exemples": ["Il s'est tf quand il a vu ses notes."],
+    "categorie": "Comportement"
+  },
+  {
+    "mot": "crari",
+    "signification": "Apparemment, on dirait que (déformation de 'croire que').",
+    "exemples": ["Il est crari fâché contre moi."],
+    "categorie": "Communication"
+  },
+  {
+    "mot": "BG",
+    "signification": "Abréviation de 'beau gosse'.",
+    "exemples": ["T'es trop un BG avec cette coupe !"],
+    "categorie": "Compliment"
+  },
+  {
+    "mot": "sez",
+    "signification": "Verlan de 'chez', utilisé pour dire chez quelqu'un ou chez soi.",
+    "exemples": ["On se retrouve sez moi ce soir ?"],
+    "categorie": "Lieu"
+  },
+  {
+    "mot": "deso",
+    "signification": "Abréviation de 'désolé'.",
+    "exemples": ["Deso, je pourrai pas venir demain."],
+    "categorie": "Communication"
+  },
+  {
+    "mot": "scarification",
+    "signification": "Pratique d'automutilation consistant à se faire des entailles sur la peau, souvent liée à une détresse psychologique.",
+    "exemples": ["Il a des cicatrices de scarification sur les avant-bras."],
+    "categorie": "Santé mentale"
+  },
+  {
+    "mot": "point violet",
+    "signification": "Symbole utilisé sur les réseaux sociaux pour signaler qu'on est victime ou témoin de violences sexuelles.",
+    "exemples": ["Elle a mis un point violet sur son profil pour alerter discrètement."],
+    "categorie": "Code"
+  },
+  {
+    "mot": "grooming",
+    "signification": "Manipulation psychologique d'un mineur par un adulte dans le but d'établir une relation de confiance pour ensuite l'exploiter sexuellement.",
+    "exemples": ["Ce prédateur pratique le grooming sur les réseaux sociaux fréquentés par les adolescents."],
+    "categorie": "Cyberharcèlement"
+  }
+]
