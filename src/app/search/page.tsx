@@ -6,12 +6,9 @@ import SearchBar from '@/components/SearchBar';
 import EmojiGrid from '@/components/EmojiGrid';
 import { getAllEmojis, searchEmojis } from '@/utils/emoji-utils';
 
-interface SearchPageProps {
-  searchParams: { q?: string };
-}
-
-export default async function SearchPage({ searchParams }: SearchPageProps) {
-  const query = searchParams.q || '';
+export default async function SearchPage({ searchParams }: { searchParams: Promise<{ q?: string }> }) {
+  const { q } = await searchParams;
+  const query = q || '';
   const allEmojis = await getAllEmojis();
   const results = searchEmojis(allEmojis, query);
 

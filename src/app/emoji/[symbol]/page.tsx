@@ -11,10 +11,6 @@ import {
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-interface EmojiDetailPageProps {
-  params: { symbol: string };
-}
-
 export async function generateStaticParams() {
   const emojis = await getAllEmojis();
   return emojis.map((emoji) => ({
@@ -22,11 +18,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function EmojiDetailPage({ params }: EmojiDetailPageProps) {
-  // Await params before accessing its properties
-  const symbolParam = await params.symbol;
-  // Utiliser notre fonction spéciale de décodage pour les emojis composés
-  const decodedSymbol = decodeEmojiFromUrl(symbolParam);
+export default async function EmojiDetailPage({ params }: { params: Promise<{ symbol: string }> }) {
+  const { symbol } = await params;
+  const decodedSymbol = decodeEmojiFromUrl(symbol);
   const emojis = await getAllEmojis();
   const emoji = getEmojiBySymbol(emojis, decodedSymbol);
   
