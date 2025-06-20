@@ -19,9 +19,8 @@ export default function SearchBar() {
       <div className="group relative">
         {/* Subtle glow effect */}
         <div className="absolute -inset-1 bg-gradient-to-r from-rose-400 via-purple-500 to-indigo-500 rounded-full opacity-70 blur-md group-hover:opacity-100 transition-opacity duration-500"></div>
-        
-        <div className="relative flex items-center border-2 border-transparent rounded-full overflow-hidden shadow-lg bg-white">
-          <div className="pl-6 text-xl text-indigo-500">
+        <div className="relative flex flex-col sm:flex-row items-stretch border-2 border-transparent rounded-full overflow-hidden shadow-lg bg-white w-full">
+          <div className="pl-6 text-xl text-indigo-500 flex items-center justify-center">
             <span className="animate-pulse">🔍</span>
           </div>
           <input
@@ -29,11 +28,11 @@ export default function SearchBar() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Rechercher un emoji ou une signification..."
-            className="flex-grow p-4 outline-none text-lg bg-transparent"
+            className="flex-grow p-4 outline-none text-lg bg-transparent min-w-0 w-full"
           />
           <button 
             type="submit" 
-            className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-4 px-8 font-bold hover:from-indigo-600 hover:to-purple-700 transition-all"
+            className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-4 px-8 font-bold hover:from-indigo-600 hover:to-purple-700 transition-all w-full sm:w-auto"
           >
             Rechercher
           </button>

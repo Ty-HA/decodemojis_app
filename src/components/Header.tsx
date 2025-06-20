@@ -19,7 +19,7 @@ export default function Header() {
           <Link href="/" className="group text-2xl font-bold flex items-center">
             <div className="relative">
               <div className="absolute -inset-2 bg-yellow-400 rounded-full blur-md opacity-75 group-hover:opacity-100 transition-opacity"></div>
-              <span className="relative text-3xl mr-2 animate-bounce">�</span>
+              <span className="relative text-3xl mr-2 animate-bounce">💬</span>
             </div>
             <span className="relative">
               <span className="font-black tracking-tight">Decod</span><span className="text-yellow-300 font-black">Emojis</span>

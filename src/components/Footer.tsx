@@ -6,12 +6,9 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="relative mt-auto">
-      {/* Decorative wave */}
-      <div className="absolute top-0 inset-x-0 h-16 bg-gradient-to-r from-indigo-600 via-purple-600 to-rose-500 -translate-y-1/2 transform wave-top"></div>
-      
+    <footer className="relative">
       {/* Main footer content */}
-      <div className="bg-gradient-to-r from-indigo-900 via-purple-900 to-indigo-900 text-white pt-12 pb-6">
+      <div className="bg-gradient-to-r from-indigo-900 via-purple-900 to-indigo-900 text-white pt-12 pb-6 rounded-t-3xl md:rounded-t-[2.5rem]">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-start mb-12">
             {/* Logo & description */}
@@ -25,8 +22,8 @@ export default function Footer() {
                   Decod<span className="text-amber-400">Emojis</span>
                 </span>
               </Link>
-              <p className="text-indigo-100 mb-6 max-w-md">
-                Le dictionnaire évolutif et collaboratif pour déchiffrer les emojis et leurs significations cachées.
+              <p className="text-indigo-100 mb-6 max-w-sm">
+                Le dictionnaire évolutif et collaboratif pour déchiffrer les emojis et leurs significations cachées
               </p>
               <div className="flex space-x-3">
                 <a href="#" className="bg-white/10 hover:bg-white/20 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
@@ -108,14 +105,7 @@ export default function Footer() {
         </div>
       </div>
       
-      <style jsx>{`
-        .wave-top {
-          -webkit-mask-image: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z'%3E%3C/path%3E%3C/svg%3E");
-          mask-image: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z'%3E%3C/path%3E%3C/svg%3E");
-          -webkit-mask-size: cover;
-          mask-size: cover;
-        }
-      `}</style>
+      
     </footer>
   );
 }

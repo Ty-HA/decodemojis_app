@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ShareButton from '@/components/ShareButton';
 import { 
   getAllEmojis, 
   getEmojiBySymbol, 
@@ -137,17 +138,9 @@ export default async function EmojiDetailPage({ params }: { params: Promise<{ sy
             </div>
           </div>
           
-          {/* Share buttons */}
-          <div className="max-w-2xl mx-auto mt-8 flex justify-center gap-3">
-            <button className="bg-indigo-100 text-indigo-700 p-3 rounded-full hover:bg-indigo-200 transition-colors">
-              <span className="text-lg">🔄</span>
-            </button>
-            <button className="bg-indigo-100 text-indigo-700 p-3 rounded-full hover:bg-indigo-200 transition-colors">
-              <span className="text-lg">💌</span>
-            </button>
-            <button className="bg-indigo-100 text-indigo-700 p-3 rounded-full hover:bg-indigo-200 transition-colors">
-              <span className="text-lg">📋</span>
-            </button>
+          {/* Share button */}
+          <div className="max-w-2xl mx-auto mt-8 flex justify-center mb-4">
+            <ShareButton />
           </div>
         </div>
       </main>
