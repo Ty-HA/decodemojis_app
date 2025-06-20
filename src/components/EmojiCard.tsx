@@ -28,23 +28,23 @@ export default function EmojiCard({ emoji }: EmojiCardProps) {
   return (
     <Link 
       href={`/emoji/${encodeEmojiForUrl(emoji.emoji)}`}
-      className="group block bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-1 border border-transparent hover:border-indigo-200 hover:-translate-y-2 duration-300 overflow-hidden"
+      className="group block bg-white rounded-3xl shadow-md hover:shadow-xl transition-all p-2 sm:p-3 border border-transparent hover:border-indigo-200 hover:-translate-y-2 active:scale-95 duration-300 overflow-hidden focus:outline-none focus:ring-2 focus:ring-indigo-400"
     >
       {/* Card content */}
-      <div className="bg-gradient-to-br rounded-xl p-5 h-full flex flex-col">
+      <div className="bg-gradient-to-br rounded-2xl p-6 sm:p-7 h-full flex flex-col min-h-[180px]">
         {/* Emoji display */}
         <div className="relative flex justify-center items-center mb-4 py-3">
           {/* Background circle */}
           <div className={`absolute inset-0 rounded-full bg-gradient-to-br ${getRandomGradient()} opacity-30 group-hover:opacity-50 transition-opacity duration-300 blur-md`}></div>
           
           {/* Emoji normalisé pour éviter les problèmes d'affichage */}
-          <span className="text-6xl group-hover:scale-125 transform transition-transform duration-500 relative z-10">
+          <span className="text-6xl group-hover:scale-125 transform transition-transform duration-500 relative z-10 select-none" style={{ fontFamily: `'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji','sans-serif'` }}>
             {normalizeEmoji(emoji.emoji)}
           </span>
         </div>
         
         {/* Signification */}
-        <p className="text-gray-800 font-semibold line-clamp-2 text-center mb-3 flex-grow">
+        <p className="text-gray-800 font-semibold line-clamp-2 text-center mb-3 flex-grow text-base sm:text-lg">
           {emoji.signification}
         </p>
         

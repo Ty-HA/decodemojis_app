@@ -85,8 +85,7 @@ export async function getAllEmojis(): Promise<Emoji[]> {
     return data.map(emoji => ({
       ...emoji,
       emoji: normalizeEmoji(emoji.emoji),
-      // Normaliser aussi les emojis dans les exemples avec notre nouvelle fonction
-      exemples: emoji.exemples.map(exemple => normalizeEmojisInText(exemple))
+      exemples: emoji.exemples // Ne pas transformer les exemples !
     }));
   } catch (fetchError) {
     console.error('Error fetching emojis via fetch:', fetchError);

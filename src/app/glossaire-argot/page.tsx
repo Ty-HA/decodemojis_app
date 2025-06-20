@@ -101,12 +101,12 @@ export default async function GlossaireArgot() {
         </div>
         
         {/* Index alphabétique */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12 sticky top-0 bg-white/80 py-5 z-10 backdrop-blur-md rounded-xl shadow-lg">
+        <div className="flex flex-nowrap overflow-x-auto gap-2 mb-12 sticky top-0 bg-white/80 py-5 z-10 backdrop-blur-md rounded-xl shadow-lg px-2 snap-x snap-mandatory scrollbar-hide">
           {sortedLetters.map((letter, index) => (
             <a 
               key={letter} 
               href={`#letter-${letter}`}
-              className={`w-12 h-12 flex items-center justify-center bg-gradient-to-br ${getColorClass(index)} rounded-full font-bold shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300`}
+              className={`w-12 h-12 flex items-center justify-center bg-gradient-to-br ${getColorClass(index)} rounded-full font-bold shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300 snap-center select-none`}
             >
               {letter}
             </a>
@@ -138,22 +138,21 @@ export default async function GlossaireArgot() {
                 </h2>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                 {argotsByFirstLetter[letter].map((argot) => (
                   <div 
                     key={argot.mot}
-                    className="group flex flex-col p-5 bg-white rounded-xl border border-gray-100 hover:border-amber-200 hover:shadow-lg transition-all hover:-translate-y-1 duration-300"
+                    className="group flex flex-col p-5 bg-white rounded-2xl sm:rounded-3xl border border-gray-100 hover:border-amber-200 hover:shadow-lg transition-all hover:-translate-y-1 duration-300 min-h-[140px] shadow-sm"
                   >
                     <div className="flex items-center mb-3">
-                      <span className="text-xl font-bold text-gray-900 mr-2">{argot.mot}</span>
+                      <span className="text-xl font-bold text-gray-900 mr-2 break-all max-w-[70vw]">{argot.mot}</span>
                       {argot.categorie && (
                         <span className="px-2.5 py-1 text-xs font-medium bg-gradient-to-r from-amber-50 to-yellow-50 text-amber-700 rounded-full border border-amber-100">
                           {argot.categorie}
                         </span>
                       )}
                     </div>
-                    
-                    <p className="text-gray-700 mb-3">{argot.signification || argot.definition}</p>
+                    <p className="text-gray-700 mb-3 text-sm sm:text-base line-clamp-2">{argot.signification || argot.definition}</p>
                     
                     {argot.exemples && argot.exemples.length > 0 && (
                       <div className="mt-auto">

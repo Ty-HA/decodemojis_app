@@ -5,7 +5,6 @@ import {
   getEmojiBySymbol, 
   decodeEmojiFromUrl, 
   encodeEmojiForUrl,
-  normalizeEmojisInText,
   normalizeEmoji
 } from '@/utils/emoji-utils';
 import Link from 'next/link';
@@ -99,14 +98,12 @@ export default async function EmojiDetailPage({ params }: { params: Promise<{ sy
                 </h2>
                 <ul className="space-y-4">
                   {emoji.exemples.map((exemple, index) => {
-                    // S'assurer que tous les emojis sont correctement normalisés
                     const normalizedEmoji = normalizeEmoji(emoji.emoji);
-                    const normalizedExemple = normalizeEmojisInText(exemple);
-                    
+                    // Afficher l'exemple tel quel, sans transformation
                     return (
                       <li key={index} className="bg-gradient-to-r from-rose-50/70 to-amber-50/70 p-5 rounded-xl border border-rose-100 shadow-sm flex items-start transform hover:scale-102 transition-transform cursor-pointer">
                         <span className="text-xl mr-3 text-rose-500 shrink-0">{normalizedEmoji}</span>
-                        <span className="text-gray-800 font-medium">{normalizedExemple}</span>
+                        <span className="text-gray-800 font-medium">{exemple}</span>
                       </li>
                     );
                   })}
