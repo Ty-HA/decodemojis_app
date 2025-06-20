@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import InstallPWA from "@/components/InstallPWA";
@@ -10,7 +10,6 @@ export const metadata: Metadata = {
   title: "DecodEmojis - Le dictionnaire d'emojis collaboratif",
   description: "Un dictionnaire évolutif et collaboratif d'emojis pour comprendre leur signification.",
   manifest: "/manifest.json",
-  themeColor: "#3b82f6",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -19,6 +18,10 @@ export const metadata: Metadata = {
   formatDetection: {
     telephone: false,
   }
+};
+
+export const viewport: Viewport = {
+  themeColor: "#3b82f6",
 };
 
 export default function RootLayout({

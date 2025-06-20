@@ -1,6 +1,13 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { getAllEmojis, getEmojiBySymbol } from '@/utils/emoji-utils';
+import { 
+  getAllEmojis, 
+  getEmojiBySymbol, 
+  decodeEmojiFromUrl, 
+  encodeEmojiForUrl,
+  normalizeEmojisInText,
+  normalizeEmoji
+} from '@/utils/emoji-utils';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
@@ -11,12 +18,15 @@ interface EmojiDetailPageProps {
 export async function generateStaticParams() {
   const emojis = await getAllEmojis();
   return emojis.map((emoji) => ({
-    symbol: emoji.emoji,
+    symbol: encodeEmojiForUrl(emoji.emoji),
   }));
 }
 
 export default async function EmojiDetailPage({ params }: EmojiDetailPageProps) {
-  const decodedSymbol = decodeURIComponent(params.symbol);
+  // Await params before accessing its properties
+  const symbolParam = await params.symbol;
+  // Utiliser notre fonction spéciale de décodage pour les emojis composés
+  const decodedSymbol = decodeEmojiFromUrl(symbolParam);
   const emojis = await getAllEmojis();
   const emoji = getEmojiBySymbol(emojis, decodedSymbol);
   
@@ -94,12 +104,18 @@ export default async function EmojiDetailPage({ params }: EmojiDetailPageProps) 
                   Exemples d&apos;utilisation
                 </h2>
                 <ul className="space-y-4">
-                  {emoji.exemples.map((exemple, index) => (
-                    <li key={index} className="bg-gradient-to-r from-rose-50/70 to-amber-50/70 p-5 rounded-xl border border-rose-100 shadow-sm flex items-start transform hover:scale-102 transition-transform cursor-pointer">
-                      <span className="text-xl mr-3 text-rose-500 shrink-0">{emoji.emoji}</span>
-                      <span className="text-gray-800 font-medium">{exemple}</span>
-                    </li>
-                  ))}
+                  {emoji.exemples.map((exemple, index) => {
+                    // S'assurer que tous les emojis sont correctement normalisés
+                    const normalizedEmoji = normalizeEmoji(emoji.emoji);
+                    const normalizedExemple = normalizeEmojisInText(exemple);
+                    
+                    return (
+                      <li key={index} className="bg-gradient-to-r from-rose-50/70 to-amber-50/70 p-5 rounded-xl border border-rose-100 shadow-sm flex items-start transform hover:scale-102 transition-transform cursor-pointer">
+                        <span className="text-xl mr-3 text-rose-500 shrink-0">{normalizedEmoji}</span>
+                        <span className="text-gray-800 font-medium">{normalizedExemple}</span>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             )}

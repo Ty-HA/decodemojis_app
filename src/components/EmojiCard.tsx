@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { Emoji } from '@/types';
+import { encodeEmojiForUrl, normalizeEmoji } from '@/utils/emoji-utils';
 
 interface EmojiCardProps {
   emoji: Emoji;
@@ -26,7 +27,7 @@ export default function EmojiCard({ emoji }: EmojiCardProps) {
   
   return (
     <Link 
-      href={`/emoji/${encodeURIComponent(emoji.emoji)}`}
+      href={`/emoji/${encodeEmojiForUrl(emoji.emoji)}`}
       className="group block bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-1 border border-transparent hover:border-indigo-200 hover:-translate-y-2 duration-300 overflow-hidden"
     >
       {/* Card content */}
@@ -36,9 +37,9 @@ export default function EmojiCard({ emoji }: EmojiCardProps) {
           {/* Background circle */}
           <div className={`absolute inset-0 rounded-full bg-gradient-to-br ${getRandomGradient()} opacity-30 group-hover:opacity-50 transition-opacity duration-300 blur-md`}></div>
           
-          {/* Emoji */}
+          {/* Emoji normalisé pour éviter les problèmes d'affichage */}
           <span className="text-6xl group-hover:scale-125 transform transition-transform duration-500 relative z-10">
-            {emoji.emoji}
+            {normalizeEmoji(emoji.emoji)}
           </span>
         </div>
         
