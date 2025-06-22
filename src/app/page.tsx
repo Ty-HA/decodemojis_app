@@ -22,16 +22,16 @@ export default async function Home() {
         <section className="mb-8 relative mt-8">
           <div className="absolute inset-0 bg-gradient-to-r from-indigo-50 to-rose-50 rounded-3xl -z-10"></div>
           <div className="p-8 md:p-10 rounded-3xl">
-            <div className="flex items-center justify-between mb-8">
-              <h2 className="text-2xl md:text-3xl font-black text-indigo-900">
-                <span className="inline-block animate-bounce-short mr-2">🆕</span> Emojis récemment ajoutés
-              </h2>
+            <h2 className="text-xl md:text-3xl font-black text-indigo-900 mb-8 flex items-center">
+              <span className="inline-block animate-bounce-short mr-2">🆕</span> Emojis récemment ajoutés
+            </h2>
+            <EmojiGrid emojis={recentEmojis} />
+            <div className="flex justify-center mt-8">
               <Link href="/glossaire" 
-                className="text-indigo-600 hover:text-indigo-800 flex items-center font-medium bg-white/50 px-4 py-2 rounded-full hover:bg-white/80 transition-all">
+                className="text-indigo-600 hover:text-indigo-800 flex items-center font-medium bg-white/50 px-6 py-3 rounded-full hover:bg-white/80 transition-all shadow-md">
                 Voir tous <span className="ml-1">→</span>
               </Link>
             </div>
-            <EmojiGrid emojis={recentEmojis} />
           </div>
         </section>
         

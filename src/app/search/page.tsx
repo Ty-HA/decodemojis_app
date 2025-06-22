@@ -24,7 +24,15 @@ export default async function SearchPage({ searchParams }: { searchParams: Promi
           
           <div className="flex items-center justify-between mb-6">
             <p className="text-gray-600">
-              <span className="font-semibold text-blue-600">{results.length}</span> résultat{results.length !== 1 ? 's' : ''} pour &quot;<span className="italic">{query}</span>&quot;
+              {query.trim() ? (
+                <>
+                  <span className="font-semibold text-blue-600">{results.length}</span> résultat{results.length !== 1 ? 's' : ''} pour &quot;<span className="italic">{query}</span>&quot;
+                </>
+              ) : (
+                <>
+                  <span className="font-semibold text-blue-600">{allEmojis.length}</span> emojis enregistrés
+                </>
+              )}
             </p>
             
             <Link href="/glossaire" className="text-blue-600 hover:text-blue-800 flex items-center">
