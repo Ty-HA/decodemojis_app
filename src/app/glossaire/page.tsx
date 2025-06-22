@@ -135,7 +135,7 @@ export default async function Glossaire() {
           <section 
             key={category} 
             id={`category-${category}`} 
-            className="mb-16 relative scroll-mt-28" // Ajout scroll-mt pour ancrage correct
+            className="mb-16 relative scroll-mt-64 md:scroll-mt-28"
           >
             {/* Background stripes alternating for visual interest */}
             {categoryIndex % 2 === 0 && (
