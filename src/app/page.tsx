@@ -66,11 +66,11 @@ export default async function Home() {
               </div>
             </div>
             <div className="md:w-1/3 flex justify-center items-center">
-              <div className="grid grid-cols-2 gap-6 text-7xl">
-                <div className="bg-white/10 p-4 rounded-2xl flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer animate-floating">🍑</div>
-                <div className="bg-white/10 p-4 rounded-2xl flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer animate-floating-delay">💦</div>
-                <div className="bg-white/10 p-4 rounded-2xl flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer animate-floating-delay-2">👉👈</div>
-                <div className="bg-white/10 p-4 rounded-2xl flex items-center justify-center hover:scale-110 transition-transform duration-300 cursor-pointer animate-floating-delay-3">🧢</div>
+              <div className="grid grid-cols-2 gap-4 sm:gap-6 w-full max-w-xs sm:max-w-sm">
+                <div className="bg-white/10 rounded-2xl flex items-center justify-center aspect-square min-h-[64px] sm:min-h-[96px] text-4xl sm:text-7xl hover:scale-110 transition-transform duration-300 cursor-pointer animate-floating">🍑</div>
+                <div className="bg-white/10 rounded-2xl flex items-center justify-center aspect-square min-h-[64px] sm:min-h-[96px] text-4xl sm:text-7xl hover:scale-110 transition-transform duration-300 cursor-pointer animate-floating-delay">💦</div>
+                <div className="bg-white/10 rounded-2xl flex items-center justify-center aspect-square min-h-[64px] sm:min-h-[96px] text-4xl sm:text-7xl hover:scale-110 transition-transform duration-300 cursor-pointer animate-floating-delay-2">👉👈</div>
+                <div className="bg-white/10 rounded-2xl flex items-center justify-center aspect-square min-h-[64px] sm:min-h-[96px] text-4xl sm:text-7xl hover:scale-110 transition-transform duration-300 cursor-pointer animate-floating-delay-3">🧢</div>
               </div>
             </div>
           </div>
