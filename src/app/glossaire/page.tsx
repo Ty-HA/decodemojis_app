@@ -102,7 +102,7 @@ export default async function Glossaire() {
             </p>
           </div>
           
-          {/* Onglet pour le glossaire alphabétique */}
+          {/* Onglet pour le glossaire alphabétique 
           <div className="flex justify-center mb-8">
             <Link 
               href="/glossaire-alphabetique" 
@@ -112,6 +112,8 @@ export default async function Glossaire() {
               <span className="text-xl">📚</span>
             </Link>
           </div>
+          */}
+        
         </div>
         
         {/* Index des catégories */}
@@ -133,7 +135,7 @@ export default async function Glossaire() {
           <section 
             key={category} 
             id={`category-${category}`} 
-            className="mb-16 relative"
+            className="mb-16 relative scroll-mt-28" // Ajout scroll-mt pour ancrage correct
           >
             {/* Background stripes alternating for visual interest */}
             {categoryIndex % 2 === 0 && (
@@ -168,12 +170,12 @@ export default async function Glossaire() {
                       <p className="font-semibold line-clamp-1 text-gray-900">{emoji.signification}</p>
                       <div className="mt-1.5 flex flex-wrap gap-1.5">
                         {emoji.tags && emoji.tags.slice(0, 2).map((tag) => (
-                          <span key={tag} className="text-xs bg-gradient-to-r from-indigo-50 to-purple-50 text-indigo-700 px-2.5 py-1 rounded-full font-medium border border-indigo-100">
+                          <span key={tag} className="text-xs md:text-xs bg-gradient-to-r from-indigo-50 to-purple-50 text-indigo-700 px-2 py-0.5 md:px-2.5 md:py-1 rounded-full font-medium border border-indigo-100 md:border block md:inline-block">
                             {tag}
                           </span>
                         ))}
                         {emoji.tags && emoji.tags.length > 2 && (
-                          <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">
+                          <span className="text-xs md:text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 md:px-2 md:py-1 rounded-full md:border block md:inline-block">
                             +{emoji.tags.length - 2}
                           </span>
                         )}
