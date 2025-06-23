@@ -132,6 +132,13 @@ export default function ProposerPage() {
           )}
           
           <form onSubmit={handleSubmit} className="space-y-6">
+            <input
+              type="checkbox"
+              name="botcheck"
+              tabIndex={-1}
+              autoComplete="off"
+              style={{ display: 'none' }}
+            />
             <div>
               <label htmlFor="emoji" className="block text-sm font-medium text-gray-700 mb-1">
                 Emoji *
