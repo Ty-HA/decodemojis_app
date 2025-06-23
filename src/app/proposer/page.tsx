@@ -19,6 +19,7 @@ export default function ProposerPage() {
   
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
   
   useEffect(() => {
     setFormData(prev => ({ ...prev, emoji: initialEmoji }));
@@ -34,7 +35,7 @@ export default function ProposerPage() {
     setFormData(prev => ({ ...prev, [name]: checked }));
   };
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!formData.emoji || !formData.signification) {
@@ -47,12 +48,34 @@ export default function ProposerPage() {
       return;
     }
     
-    // In a real app, this would send the data to a backend
-    console.log('Form submitted:', formData);
-    
-    // For demo purposes, just show a success message
-    setSubmitted(true);
+    setLoading(true);
     setError('');
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORM_ACCESS_KEY,
+          subject: 'Nouvelle proposition emoji',
+          from_name: 'DecodEmojis',
+          emoji: formData.emoji,
+          signification: formData.signification,
+          exemples: formData.exemples,
+          email: formData.email,
+        })
+      });
+      const data = await res.json();
+      if (data.success) {
+        setSubmitted(true);
+        setError('');
+      } else {
+        setError("Erreur lors de l'envoi. Veuillez réessayer.");
+      }
+    } catch {
+      setError("Erreur lors de l'envoi. Veuillez réessayer.");
+    } finally {
+      setLoading(false);
+    }
   };
   
   if (submitted) {
@@ -190,13 +213,15 @@ export default function ProposerPage() {
             <div>
               <button
                 type="submit"
-                className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition-colors w-full sm:w-auto"
+                className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition-colors w-full sm:w-auto disabled:opacity-60"
+                disabled={loading}
               >
-                Soumettre ma proposition
+                {loading ? 'Envoi en cours...' : 'Soumettre ma proposition'}
               </button>
             </div>
             
             <p className="text-xs text-gray-500">* Champs obligatoires</p>
+            <p className="text-xs text-gray-400 mt-2">Les formulaires de ce site utilisent le service Web3Forms pour l’envoi sécurisé de vos messages.</p>
           </form>
         </div>
       </main>

@@ -15,6 +15,7 @@ export default function ContactPage() {
   
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -26,7 +27,7 @@ export default function ContactPage() {
     setFormData(prev => ({ ...prev, [name]: checked }));
   };
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!formData.name || !formData.email || !formData.message) {
@@ -39,12 +40,34 @@ export default function ContactPage() {
       return;
     }
     
-    // In a real app, this would send the data to a backend
-    console.log('Contact form submitted:', formData);
-    
-    // For demo purposes, just show a success message
-    setSubmitted(true);
+    setLoading(true);
     setError('');
+    
+    // Envoi via Web3Forms
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORM_ACCESS_KEY,
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        })
+      });
+      const data = await res.json();
+      if (data.success) {
+        setSubmitted(true);
+        setError('');
+      } else {
+        setError("Erreur lors de l'envoi. Veuillez réessayer.");
+      }
+    } catch {
+      setError("Erreur lors de l'envoi. Veuillez réessayer.");
+    } finally {
+      setLoading(false);
+    }
   };
   
   if (submitted) {
@@ -185,13 +208,15 @@ export default function ContactPage() {
             <div>
               <button
                 type="submit"
-                className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition-colors w-full sm:w-auto"
+                className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition-colors w-full sm:w-auto disabled:opacity-60"
+                disabled={loading}
               >
-                Envoyer le message
+                {loading ? 'Envoi en cours...' : 'Envoyer le message'}
               </button>
             </div>
             
             <p className="text-xs text-gray-500">* Champs obligatoires</p>
+            <p className="text-xs text-gray-400 mt-2">Les formulaires de ce site utilisent le service Web3Forms pour l’envoi sécurisé de vos messages.</p>
           </form>
         </div>
       </main>
