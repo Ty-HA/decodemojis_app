@@ -74,32 +74,34 @@ export default function ContactPage() {
     return (
       <>
         <Header />
-        <main className="container mx-auto px-4 py-12">
-          <div className="bg-green-50 border-l-4 border-green-500 p-4 mb-6 max-w-2xl mx-auto">
-            <p className="text-green-700">
-              Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.
-            </p>
-          </div>
-          
-          <div className="text-center">
-            <button
-              onClick={() => {
-                setSubmitted(false);
-                setFormData({
-                  name: '',
-                  email: '',
-                  message: '',
-                  subject: 'question',
-                  consent: false,
-                });
-              }}
-              className="text-blue-500 hover:underline"
-            >
-              Envoyer un autre message
-            </button>
-          </div>
-        </main>
-        <Footer />
+        <div className="min-h-screen flex flex-col">
+          <main className="container mx-auto px-4 py-12 flex-grow flex flex-col justify-center">
+            <div className="bg-green-50 border-l-4 border-green-500 p-4 mb-6 max-w-2xl mx-auto">
+              <p className="text-green-700">
+                Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <button
+                onClick={() => {
+                  setSubmitted(false);
+                  setFormData({
+                    name: '',
+                    email: '',
+                    message: '',
+                    subject: 'question',
+                    consent: false,
+                  });
+                }}
+                className="text-blue-500 hover:underline"
+              >
+                Envoyer un autre message
+              </button>
+            </div>
+          </main>
+          <Footer />
+        </div>
       </>
     );
   }

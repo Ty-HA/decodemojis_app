@@ -82,30 +82,33 @@ export default function ProposerPage() {
     return (
       <>
         <Header />
-        <main className="container mx-auto px-4 py-12">
-          <div className="bg-green-50 border-l-4 border-green-500 p-4 mb-6">
-            <p className="text-green-700">
-              Merci pour votre contribution ! Votre proposition a été enregistrée et sera examinée par notre équipe.
-            </p>
-          </div>
-          
-          <button
-            onClick={() => {
-              setSubmitted(false);
-              setFormData({
-                emoji: '',
-                signification: '',
-                exemples: '',
-                email: '',
-                consent: false
-              });
-            }}
-            className="text-blue-500 hover:underline"
-          >
-            Proposer une autre définition
-          </button>
-        </main>
-        <Footer />
+        <div className="min-h-screen flex flex-col">
+          <main className="container mx-auto px-4 py-12 flex-grow flex flex-col justify-center">
+            <div className="bg-green-50 border-l-4 border-green-500 p-4 mb-6 max-w-2xl mx-auto">
+              <p className="text-green-700">
+                Merci pour votre contribution ! Votre proposition a été enregistrée et sera examinée par notre équipe.
+              </p>
+            </div>
+            <div className="text-center">
+              <button
+                onClick={() => {
+                  setSubmitted(false);
+                  setFormData({
+                    emoji: '',
+                    signification: '',
+                    exemples: '',
+                    email: '',
+                    consent: false
+                  });
+                }}
+                className="text-blue-500 hover:underline"
+              >
+                Proposer une autre définition
+              </button>
+            </div>
+          </main>
+          <Footer />
+        </div>
       </>
     );
   }
