@@ -95,9 +95,22 @@ export default function Footer() {
           
           {/* Bottom copyright */}
           <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between">
-            <p className="text-sm text-indigo-200">
-              &copy; {currentYear} DecodEmojis - Un dictionnaire collaboratif d&apos;emojis
-            </p>
+            <div className="flex flex-col items-center md:items-start">
+              <p className="text-sm text-indigo-200">
+                &copy; {currentYear} DecodEmojis - Un dictionnaire collaboratif d&apos;emojis
+              </p>
+              <p className="text-sm text-indigo-300 mt-1">
+                Créé par{' '}
+                <a 
+                  href="https://bthasystem.io/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-amber-400 hover:text-amber-300 transition-colors underline"
+                >
+                  BTHA System
+                </a>
+              </p>
+            </div>
             <p className="text-sm text-indigo-300 mt-3 md:mt-0">
               Fait avec 💜 pour aider à comprendre les emojis
             </p>
