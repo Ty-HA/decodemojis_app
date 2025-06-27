@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emoji Favicon Generator</title>
+  <style>
+    body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+  <canvas id="canvas" width="32" height="32"></canvas>
+  <script>
+    // Code pour générer un favicon avec emoji
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    
+    // Remplacez par l'emoji souhaité
+    const emoji = '💬';
+    
+    // Dessiner l'emoji
+    ctx.font = '24px serif';
+    ctx.fillText(emoji, 4, 24);
+    
+    // Convertir en PNG
+    const dataUrl = canvas.toDataURL('image/png');
+    
+    // Créer un élément d'image pour prévisualisation
+    const img = document.createElement('img');
+    img.src = dataUrl;
+    document.body.appendChild(img);
+    
+    // Lien de téléchargement
+    const link = document.createElement('a');
+    link.href = dataUrl;
+    link.download = 'favicon.png';
+    link.textContent = 'Télécharger le favicon';
+    document.body.appendChild(link);
+  </script>
+</body>
+</html>
