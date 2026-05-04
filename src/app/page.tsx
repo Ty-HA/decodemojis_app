@@ -7,17 +7,75 @@ import { getAllEmojis, sortEmojisByDate } from '@/utils/emoji-utils';
 import HeroSection from '@/components/HeroSection';
 import EmojiHeader from '@/components/EmojiHeader';
 
+const LATEST_REVISION = '2026-05-04';
+
 export default async function Home() {
   const emojis = await getAllEmojis();
   const recentEmojis = sortEmojisByDate(emojis).slice(0, 10);
-  
+  const recentlyAddedCount = emojis.filter((e) => e.date_ajout >= '2026-05-01').length;
+  const formattedRevision = new Date(LATEST_REVISION).toLocaleDateString('fr-FR', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
   return (
     <>
       <EmojiHeader />
       <Header />
       <main className="container mx-auto px-0 md:px-4 ">
         <HeroSection />
-        
+
+        {/* News / "Nouveau" banner */}
+        <section
+          aria-labelledby="news-heading"
+          className="mb-8 mt-4 mx-2 md:mx-0 rounded-3xl overflow-hidden shadow-lg border border-white/40 relative"
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-rose-50 to-indigo-50" aria-hidden="true" />
+          <div className="absolute -top-8 -right-8 w-40 h-40 bg-amber-200 rounded-full blur-3xl opacity-60" aria-hidden="true" />
+          <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-indigo-200 rounded-full blur-3xl opacity-50" aria-hidden="true" />
+
+          <div className="relative p-5 md:p-7 flex flex-col md:flex-row md:items-center gap-5">
+            <div className="flex-1">
+              <div className="flex flex-wrap items-center gap-2 mb-2">
+                <span className="bg-amber-400 text-amber-950 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                  🆕 Nouveau
+                </span>
+                <time
+                  dateTime={LATEST_REVISION}
+                  className="text-xs text-indigo-700 font-semibold bg-white/70 px-3 py-1 rounded-full"
+                >
+                  Mise à jour du {formattedRevision}
+                </time>
+              </div>
+              <h2 id="news-heading" className="text-lg md:text-2xl font-black text-indigo-900 mb-2 leading-snug">
+                +{recentlyAddedCount} nouvelles définitions et une page Ressources officielle
+              </h2>
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                Drogues (codes DEA), codes manosphère / incel, brainrot Gen Alpha,
+                symboles d&apos;extrémisme (sources ADL), réseau FBI 764, soumission
+                chimique. Une <Link href="/ressources" className="font-bold text-indigo-700 underline decoration-indigo-300 hover:decoration-indigo-700">page Ressources</Link>{' '}
+                centralise désormais les numéros d&apos;urgence (3018, 119, 3114), les
+                outils de signalement (Pharos) et toutes les sources documentaires.
+              </p>
+            </div>
+            <div className="flex flex-row md:flex-col gap-2 md:shrink-0">
+              <Link
+                href="/glossaire"
+                className="text-center bg-indigo-600 text-white font-bold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors shadow-md text-sm"
+              >
+                Voir le glossaire
+              </Link>
+              <Link
+                href="/ressources"
+                className="text-center bg-white text-indigo-700 font-bold px-5 py-2.5 rounded-full border border-indigo-200 hover:border-indigo-400 hover:bg-indigo-50 transition-colors shadow-sm text-sm"
+              >
+                Page Ressources
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Recently added emojis with improved styling */}
         <section className="mb-8 relative mt-8">
           <div className="absolute inset-0 bg-gradient-to-r from-indigo-50 to-rose-50 rounded-3xl -z-10"></div>

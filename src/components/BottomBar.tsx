@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaHome, FaSearch, FaBookOpen, FaComments, FaPlusCircle } from "react-icons/fa";
+import { FaHome, FaSearch, FaBookOpen, FaComments, FaPlusCircle, FaLifeRing } from "react-icons/fa";
 
 export default function BottomBar() {
   const pathname = usePathname();
@@ -38,6 +38,13 @@ export default function BottomBar() {
               className={`flex flex-col items-center p-1 ${isActive("/glossaire-argot") || isActive("/glossaire-argot-categories") ? "text-amber-300" : "text-white"}`}>
               <FaComments className="text-2xl mb-0.5" />
               <span className="text-[0.7rem] font-medium">Argot</span>
+            </Link>
+          </li>
+          <li className="flex-1">
+            <Link href="/ressources"
+              className={`flex flex-col items-center p-1 ${isActive("/ressources") ? "text-amber-300" : "text-white"}`}>
+              <FaLifeRing className="text-2xl mb-0.5" />
+              <span className="text-[0.7rem] font-medium">Aide</span>
             </Link>
           </li>
           <li className="flex-1">

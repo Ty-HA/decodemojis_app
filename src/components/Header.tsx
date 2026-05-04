@@ -43,7 +43,13 @@ export default function Header() {
               <li>
                 <Link href="/glossaire-argot" className="px-3 py-2 rounded-full hover:bg-white/20 transition-all flex items-center font-medium">
                   <span className="hidden sm:inline">Argot</span>
-                  <span className="sm:hidden">�️</span>
+                  <span className="sm:hidden" aria-label="Argot">🗣️</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/ressources" className="px-3 py-2 rounded-full hover:bg-white/20 transition-all flex items-center font-medium" title="Numéros d'urgence, signalement, sources">
+                  <span className="hidden sm:inline">Ressources</span>
+                  <span className="sm:hidden" aria-label="Ressources">🆘</span>
                 </Link>
               </li>
               <li>

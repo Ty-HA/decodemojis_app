@@ -176,7 +176,7 @@ export default async function EmojiDetailPage({ params }: { params: Promise<{ sy
               <div className="mb-6 bg-rose-50 border-l-4 border-rose-500 p-4 rounded-xl flex items-start gap-3" role="alert">
                 <span className="text-2xl shrink-0" aria-hidden="true">⚠️</span>
                 <div className="text-sm text-rose-900 leading-relaxed">
-                  <strong className="font-bold">Signal d&apos;alerte.</strong> Cet emoji peut être associé à des contenus graves (drogue, automutilation, exploitation, haine). Un emoji isolé ne signifie rien : c&apos;est la <em>combinaison</em> avec d&apos;autres éléments (pseudo, contexte, changement de comportement) qui doit attirer l&apos;attention. En cas d&apos;urgence : <a href="https://www.e-enfance.org" target="_blank" rel="noopener noreferrer" className="underline font-semibold">3018 (e-Enfance)</a>.
+                  <strong className="font-bold">Signal d&apos;alerte.</strong> Cet emoji peut être associé à des contenus graves (drogue, automutilation, exploitation, haine). Un emoji isolé ne signifie rien : c&apos;est la <em>combinaison</em> avec d&apos;autres éléments (pseudo, contexte, changement de comportement) qui doit attirer l&apos;attention. Numéros et services officiels sur notre <Link href="/ressources" className="underline font-semibold">page Ressources</Link> (3018, 119, 3114, Pharos…).
                 </div>
               </div>
             )}
