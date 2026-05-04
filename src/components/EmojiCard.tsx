@@ -25,11 +25,22 @@ export default function EmojiCard({ emoji }: EmojiCardProps) {
     return gradients[index];
   };
   
+  const isAlert = emoji.tags.includes('alerte');
+
   return (
-    <Link 
+    <Link
       href={`/emoji/${encodeEmojiForUrl(emoji.emoji)}`}
-      className="group block bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-1 sm:p-2 border border-transparent hover:border-indigo-200 hover:-translate-y-1 active:scale-97 duration-300 overflow-hidden focus:outline-none focus:ring-2 focus:ring-indigo-400 animate-floating h-full"
+      className="group relative block bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-1 sm:p-2 border border-transparent hover:border-indigo-200 hover:-translate-y-1 active:scale-97 duration-300 overflow-hidden focus:outline-none focus:ring-2 focus:ring-indigo-400 animate-floating h-full"
     >
+      {isAlert && (
+        <span
+          aria-label="Signal d'alerte : signification potentiellement grave"
+          title="Signal d'alerte : signification potentiellement grave"
+          className="absolute top-1.5 right-1.5 z-20 text-[10px] leading-none bg-rose-500 text-white rounded-full w-5 h-5 flex items-center justify-center shadow-sm"
+        >
+          ⚠
+        </span>
+      )}
       {/* Card content */}
       <div className="bg-gradient-to-br rounded-xl p-2 sm:p-3 h-full flex flex-col min-h-[220px] justify-between">
         {/* Emoji display */}

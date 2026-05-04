@@ -72,13 +72,6 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
-    ],
-    apple: "/icons/icon-192x192.png",
-  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",

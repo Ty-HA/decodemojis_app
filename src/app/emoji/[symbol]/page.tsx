@@ -172,6 +172,24 @@ export default async function EmojiDetailPage({ params }: { params: Promise<{ sy
               </p>
             </div>
             
+            {emoji.tags.includes('alerte') && (
+              <div className="mb-6 bg-rose-50 border-l-4 border-rose-500 p-4 rounded-xl flex items-start gap-3" role="alert">
+                <span className="text-2xl shrink-0" aria-hidden="true">⚠️</span>
+                <div className="text-sm text-rose-900 leading-relaxed">
+                  <strong className="font-bold">Signal d&apos;alerte.</strong> Cet emoji peut être associé à des contenus graves (drogue, automutilation, exploitation, haine). Un emoji isolé ne signifie rien : c&apos;est la <em>combinaison</em> avec d&apos;autres éléments (pseudo, contexte, changement de comportement) qui doit attirer l&apos;attention. En cas d&apos;urgence : <a href="https://www.e-enfance.org" target="_blank" rel="noopener noreferrer" className="underline font-semibold">3018 (e-Enfance)</a>.
+                </div>
+              </div>
+            )}
+
+            {emoji.tags.includes('fbi-2007') && (
+              <div className="mb-6 bg-amber-50 border-l-4 border-amber-500 p-4 rounded-xl flex items-start gap-3" role="note">
+                <span className="text-2xl shrink-0" aria-hidden="true">📚</span>
+                <div className="text-sm text-amber-900 leading-relaxed">
+                  <strong className="font-bold">À prendre avec précaution.</strong> Ce symbole apparaît dans un mémo de la <em>FBI Cyber Division (2007)</em> sur les logos utilisés par certains pédocriminels. <strong>L&apos;usage est à plus de 99 % innocent</strong> et n&apos;a aucune valeur diagnostique seul. Il ne devient un signal qu&apos;associé à un contexte préoccupant (pseudo adulte ciblant des mineurs, demandes d&apos;images, etc.).
+                </div>
+              </div>
+            )}
+
             {/* Signification section */}
             <div className="mb-10 bg-gradient-to-r from-indigo-50/80 to-purple-50/80 p-6 rounded-2xl border border-indigo-100 shadow-sm">
               <h2 className="text-2xl font-black mb-4 text-indigo-900 flex items-center">

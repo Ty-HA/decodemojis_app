@@ -1,0 +1,415 @@
+[
+  {
+    "emoji": "🍑",
+    "signification": "Utilisé pour représenter des fesses ou de la sexualité.",
+    "exemples": ["Il a envoyé une 🍑 pour rigoler."],
+    "tags": ["sexualité", "ado"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "💦",
+    "signification": "Gouttes de sueur, mais aussi utilisé pour évoquer des fluides corporels ou l'excitation sexuelle.",
+    "exemples": ["Cette photo est 💦"],
+    "tags": ["sexualité", "ambiguïté"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🔥",
+    "signification": "Quelque chose de chaud, génial ou qui suscite l'enthousiasme. Peut aussi indiquer l'attraction physique.",
+    "exemples": ["Ta nouvelle photo de profil est 🔥"],
+    "tags": ["populaire", "compliment"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "👉👈",
+    "signification": "Timidité, hésitation, ou flirt maladroit. Souvent utilisé pour demander quelque chose avec gêne.",
+    "exemples": ["Est-ce qu'on pourrait se voir demain... 👉👈"],
+    "tags": ["timidité", "flirt", "demande"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "💀",
+    "signification": "Peut signifier qu'on est mort de rire, mais aussi parfois utilisé comme un euphémisme pour un décès.",
+    "exemples": ["Ce meme m'a tué 💀"],
+    "tags": ["populaire", "humour"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🫠",
+    "signification": "Un visage qui fond, utilisé pour exprimer de l'embarras ou de la gêne.",
+    "exemples": ["Quand le prof m'a appelé au tableau 🫠"],
+    "tags": ["embarras", "humour", "populaire"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "💊",
+    "signification": "Pilule rouge dans le contexte de la mouvance masculiniste/incel. Représente 'l'éveil' aux théories misogynes selon lesquelles les femmes manipuleraient les hommes.",
+    "exemples": ["Il a pris la 💊 rouge, maintenant il comprend la vérité sur les femmes."],
+    "tags": ["incel", "masculinisme", "danger", "idéologie"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🔵",
+    "signification": "Pilule bleue dans le contexte incel/masculiniste. Représente ceux qui 'restent ignorants' de la supposée manipulation féminine selon cette idéologie.",
+    "exemples": ["Il reste un homme 🔵, il n'a pas encore compris comment fonctionne le monde."],
+    "tags": ["incel", "masculinisme", "idéologie"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🧨",
+    "signification": "Dans le contexte incel, symbolise une 'pilule rouge qui explose', indiquant une radicalisation extrême vers les idéologies misogynes.",
+    "exemples": ["Ce forum l'a 🧨, il ne parle plus que de ça."],
+    "tags": ["incel", "masculinisme", "radicalisation", "danger"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "💯",
+    "signification": "Utilisé pour la 'règle des 80/20' dans les communautés incels, théorie selon laquelle 80% des femmes seraient attirées par seulement 20% des hommes.",
+    "exemples": ["C'est la règle 💯 qui s'applique sur les applications de rencontre."],
+    "tags": ["incel", "masculinisme", "théorie"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🫘",
+    "signification": "Haricot rouge utilisé comme signe d'appartenance à la communauté incel.",
+    "exemples": ["Ils se reconnaissent avec 🫘 dans leurs bios."],
+    "tags": ["incel", "masculinisme", "communauté"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🍆",
+    "signification": "Représente les organes génitaux masculins dans les conversations à caractère sexuel.",
+    "exemples": ["Il m'a envoyé un message avec 🍆 sans contexte."],
+    "tags": ["sexualité", "explicite"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🍒",
+    "signification": "Peut représenter les seins ou faire référence à la virginité dans les conversations à caractère sexuel.",
+    "exemples": ["Cette personne parle toujours de ses 🍒."],
+    "tags": ["sexualité", "explicite"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "👅",
+    "signification": "Utilisée pour évoquer des actes sexuels oraux ou un intérêt sexuel.",
+    "exemples": ["Il m'a envoyé un 👅 après ma photo."],
+    "tags": ["sexualité", "explicite"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🌽",
+    "signification": "Code pour 'porno' (corn/porn), utilisé pour contourner les filtres des plateformes.",
+    "exemples": ["Tu as du 🌽 à partager ?"],
+    "tags": ["sexualité", "pornographie", "code"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "😈",
+    "signification": "Indique une intention de provocation ou de flirt dans un contexte sexuel.",
+    "exemples": ["Je t'attends ce soir 😈"],
+    "tags": ["sexualité", "flirt", "provocation"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🔞",
+    "signification": "Signale explicitement un contenu pornographique ou inapproprié pour les mineurs.",
+    "exemples": ["Je t'envoie ça en MP, c'est 🔞"],
+    "tags": ["sexualité", "pornographie", "avertissement"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "📸",
+    "signification": "Dans certains contextes, peut être une demande d'envoi de photos intimes ou de 'nudes'.",
+    "exemples": ["Tu me fais une 📸 ?"],
+    "tags": ["sexualité", "danger", "demande"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🤡",
+    "signification": "Utilisé pour se moquer de quelqu'un, le traiter de naïf ou de ridicule. Outil de cyberharcèlement.",
+    "exemples": ["Regardez qui a parlé 🤡"],
+    "tags": ["cyberharcèlement", "moquerie", "insulte"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🐷",
+    "signification": "Employé comme insulte pour traiter quelqu'un de sale ou de répugnant.",
+    "exemples": ["Va te laver 🐷"],
+    "tags": ["cyberharcèlement", "insulte", "dégoût"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🔪",
+    "signification": "Peut véhiculer une menace ou exprimer une violence symbolique dans un contexte de harcèlement.",
+    "exemples": ["J'ai envie de le 🔪 tellement il m'énerve."],
+    "tags": ["cyberharcèlement", "menace", "violence", "danger"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🍁",
+    "signification": "Référence au cannabis dans les discussions sur les drogues.",
+    "exemples": ["Tu as du 🍁 pour ce soir ?"],
+    "tags": ["drogue", "cannabis", "code"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "❄️",
+    "signification": "Code pour la cocaïne dans les conversations sur les drogues.",
+    "exemples": ["Il a apporté de la ❄️ à la fête."],
+    "tags": ["drogue", "cocaïne", "code", "danger"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🍄",
+    "signification": "Désigne les champignons hallucinogènes dans le contexte des drogues.",
+    "exemples": ["On va prendre des 🍄 ce week-end."],
+    "tags": ["drogue", "hallucinogène", "code"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🐴",
+    "signification": "Référence à la kétamine dans les discussions sur les drogues.",
+    "exemples": ["Il est parti sur le 🐴 toute la nuit."],
+    "tags": ["drogue", "kétamine", "code", "danger"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🎈",
+    "signification": "Évoque le gaz hilarant (protoxyde d'azote) dans le contexte des drogues récréatives.",
+    "exemples": ["Ils ont ramené des 🎈 pour la soirée."],
+    "tags": ["drogue", "récréatif", "code"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🧪",
+    "signification": "Symbolise les drogues de synthèse ou chimiques dans les conversations codées.",
+    "exemples": ["Il fabrique des 🧪 dans son garage."],
+    "tags": ["drogue", "synthèse", "code", "danger"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🍪",
+    "signification": "Peut être utilisé comme référence antisémite aux fours crématoires dans certains contextes extrémistes.",
+    "exemples": ["Les néonazis parlaient de mettre des gens au 🍪."],
+    "tags": ["racisme", "antisémitisme", "danger", "idéologie"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🚿",
+    "signification": "Dans des contextes antisémites, peut évoquer les chambres à gaz nazies.",
+    "exemples": ["Ce groupe d'extrême-droite utilise 🚿 dans leurs messages codés."],
+    "tags": ["racisme", "antisémitisme", "danger", "idéologie"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "⚡⚡",
+    "signification": "Double éclair utilisé pour imiter le sigle SS nazi dans des contextes néo-nazis.",
+    "exemples": ["Son pseudo contenait ⚡⚡ en référence à l'idéologie nazie."],
+    "tags": ["racisme", "antisémitisme", "danger", "idéologie"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🌳",
+    "signification": "Peut être utilisé de manière raciste pour désigner des personnes d'origine arabe.",
+    "exemples": ["Les 🌳 sont encore venus au centre commercial."],
+    "tags": ["racisme", "insulte", "code"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🥛",
+    "signification": "Détourné par certains groupes d'extrême droite comme symbole de 'pureté raciale'.",
+    "exemples": ["Il a mis 🥛 dans sa bio Twitter pour signaler ses convictions."],
+    "tags": ["racisme", "suprémacisme", "idéologie", "danger"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🍕",
+    "signification": "Code utilisé par des pédocriminels, 'cheese pizza' (CP) faisant référence à 'child porn'.",
+    "exemples": ["La police a repéré des groupes échangeant du contenu avec le code 🍕."],
+    "tags": ["danger", "pédocriminalité", "code", "signalement"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "💜",
+    "signification": "Dans certains contextes adolescents, peut indiquer une attirance sexuelle ou une relation physique.",
+    "exemples": ["On est 💜 maintenant."],
+    "tags": ["relation", "code", "sexualité"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "💛",
+    "signification": "Utilisé pour exprimer un intérêt amoureux ou une amitié proche dans les codes adolescents.",
+    "exemples": ["Je suis 💛 avec lui."],
+    "tags": ["relation", "code", "amitié"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🧡",
+    "signification": "Dans la communication adolescente, peut offrir du réconfort ou indiquer la sécurité.",
+    "exemples": ["Tu peux me parler, je suis 🧡."],
+    "tags": ["relation", "code", "soutien"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "💗",
+    "signification": "Peut signifier une attirance sans intention sexuelle dans les codes adolescents.",
+    "exemples": ["On est 💗 depuis une semaine."],
+    "tags": ["relation", "code", "sentiment"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🟣",
+    "signification": "Point violet utilisé pour signaler ou dénoncer un viol ou une agression sexuelle, notamment dans des campagnes de sensibilisation.",
+    "exemples": ["Elle a mis un 🟣 à la fin de son message pour alerter sans le dire explicitement."],
+    "tags": ["viol", "agression", "code", "signalement", "aide"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "|||",
+    "signification": "Code barres pouvant faire référence à la scarification ou à l'automutilation dans certains contextes adolescents.",
+    "exemples": ["J'ai vu ||| sur son statut, je m'inquiète pour elle."],
+    "tags": ["scarification", "automutilation", "détresse", "code", "danger"],
+    "date_ajout": "2025-06-19"
+  },
+  {
+    "emoji": "🤮",
+    "signification": "Visage vomissant, détourné dans la communauté incel pour exprimer le dégoût envers l'apparence de certaines femmes.",
+    "exemples": ["Cette fille qui essaie de me parler est 🤮"],
+    "tags": ["incel", "insulte", "misogynie", "cyberharcèlement"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "👨‍❤️‍👨",
+    "signification": "Utilisé de façon péjorative par certains groupes pour se moquer des homosexuels.",
+    "exemples": ["Il fait du sport avec son pote, ils sont 👨‍❤️‍👨"],
+    "tags": ["homophobie", "insulte", "discrimination"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "💊",
+    "signification": "Dans certains contextes, représente des pilules utilisées comme drogues récréatives (ecstasy, MDMA).",
+    "exemples": ["Il va à la soirée avec des 💊"],
+    "tags": ["drogue", "récréatif", "danger", "code"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "🔴🔵",
+    "signification": "La pilule rouge et bleue, symbole adopté par la communauté incel et masculiniste pour représenter 'l'éveil' aux supposées manipulations féminines.",
+    "exemples": ["J'ai pris la 🔴 et maintenant je vois comment les femmes manipulent tout."],
+    "tags": ["incel", "masculinisme", "idéologie", "danger"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "👑",
+    "signification": "Dans le contexte incel, peut désigner le 'Chad' ou l'homme alpha qui réussit auprès des femmes.",
+    "exemples": ["Ce mec est un vrai 👑, toutes les filles lui courent après."],
+    "tags": ["incel", "code", "masculinisme"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "🐑",
+    "signification": "Mouton, utilisé pour désigner une personne qui suit aveuglement les tendances ou les opinions populaires sans réfléchir.",
+    "exemples": ["Tu crois vraiment aux infos officielles ? 🐑"],
+    "tags": ["complotisme", "insulte", "mépris"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "🧠",
+    "signification": "Cerveau, souvent utilisé sarcastiquement pour dire que quelqu'un n'en a pas ou manque d'intelligence.",
+    "exemples": ["T'as oublié d'utiliser ton 🧠 ou quoi ?"],
+    "tags": ["insulte", "cyberharcèlement", "moquerie"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "🤏",
+    "signification": "Geste de petitesse, souvent utilisé pour faire référence à la taille du pénis dans un contexte de moquerie.",
+    "exemples": ["Ce mec qui roule en grosse voiture compense pour son 🤏"],
+    "tags": ["insulte", "sexualité", "moquerie"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "⚰️",
+    "signification": "Cercueil, utilisé dans certains contextes pour encourager le suicide ou souhaiter la mort de quelqu'un.",
+    "exemples": ["Après cette humiliation, tu mérites la ⚰️"],
+    "tags": ["cyberharcèlement", "danger", "violence", "suicide"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "44",
+    "signification": "Référence au calibre .44, peut être utilisé comme une menace voilée de violence armée.",
+    "exemples": ["Continue à m'énerver et tu vas goûter au 44"],
+    "tags": ["menace", "arme", "violence", "danger"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "🪓",
+    "signification": "Hache, utilisée comme symbole de violence dans certaines menaces en ligne.",
+    "exemples": ["Si je le croise dans la rue, c'est 🪓"],
+    "tags": ["menace", "violence", "danger", "cyberharcèlement"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "👩‍🦽🚪",
+    "signification": "Combinaison d'emojis utilisée dans des blagues capacitistes visant les personnes handicapées.",
+    "exemples": ["Quand j'ai vu ta vidéo de danse j'étais comme 👩‍🦽🚪"],
+    "tags": ["capacitisme", "discrimination", "moquerie", "cyberharcèlement"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "☠️",
+    "signification": "Crâne et os croisés, utilisé dans des contextes liés à la scarification, à l'automutilation ou aux tendances suicidaires.",
+    "exemples": ["Aujourd'hui je me sens vraiment ☠️"],
+    "tags": ["scarification", "suicide", "détresse", "danger"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "🩸",
+    "signification": "Goutte de sang, peut être utilisée dans des contextes liés à l'automutilation ou à la scarification.",
+    "exemples": ["Soir difficile 🩸🩸🩸"],
+    "tags": ["scarification", "automutilation", "détresse", "danger"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "🧿",
+    "signification": "Œil turc (Nazar), utilisé ironiquement par certains groupes racistes pour désigner les personnes d'origine turque ou du Moyen-Orient.",
+    "exemples": ["Le quartier est plein de 🧿 maintenant"],
+    "tags": ["racisme", "insulte", "code"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "🐒",
+    "signification": "Singe, utilisé dans des contextes racistes pour désigner des personnes noires.",
+    "exemples": ["Ce quartier est rempli de 🐒"],
+    "tags": ["racisme", "insulte", "danger"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "🐋",
+    "signification": "Baleine, utilisée pour body-shamer et insulter des personnes en surpoids.",
+    "exemples": ["Elle devrait arrêter de poster des photos en maillot, c'est une vraie 🐋"],
+    "tags": ["grossophobie", "body-shaming", "cyberharcèlement", "insulte"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "🦴",
+    "signification": "Os, utilisé pour moquer les personnes très minces, souvent dans un contexte de troubles alimentaires.",
+    "exemples": ["Elle n'est plus que 🦴 depuis qu'elle a commencé son régime."],
+    "tags": ["troubles-alimentaires", "body-shaming", "anorexie", "moquerie"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "⚔️",
+    "signification": "Épées croisées, utilisées dans certains groupes d'extrême-droite pour signaler l'appel à une action violente.",
+    "exemples": ["Le jour du grand remplacement ⚔️"],
+    "tags": ["extrémisme", "violence", "danger", "idéologie"],
+    "date_ajout": "2025-06-22"
+  },
+  {
+    "emoji": "1️⃣4️⃣",
+    "signification": "Référence aux '14 mots', un slogan suprémaciste blanc populaire dans les milieux néo-nazis.",
+    "exemples": ["Fier de défendre mes valeurs 1️⃣4️⃣"],
+    "tags": ["racisme", "suprémacisme", "néo-nazi", "idéologie", "danger"],
+    "date_ajout": "2025-06-22"
+  }
+]
