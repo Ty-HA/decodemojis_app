@@ -1,6 +1,22 @@
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: "Glossaire de l'argot des jeunes",
+  description:
+    "Dictionnaire de l'argot et du vocabulaire utilisé par les jeunes en ligne. Décodez les expressions, abréviations et mots du langage ado.",
+  keywords: ["argot ado", "langage des jeunes", "dictionnaire argot", "expressions ados", "vocabulaire jeunes"],
+  alternates: { canonical: '/glossaire-argot' },
+  openGraph: {
+    title: "Glossaire de l'argot des jeunes | DecodEmojis",
+    description:
+      "Décodez l'argot et les expressions utilisés par les jeunes sur les réseaux sociaux.",
+    url: '/glossaire-argot',
+    type: 'website',
+  },
+};
 
 // Fonction pour récupérer les argots
 async function getArgots() {

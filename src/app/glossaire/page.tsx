@@ -1,8 +1,23 @@
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { getAllEmojis } from '@/utils/emoji-utils';
 import Link from 'next/link';
 import { Emoji } from '@/types';
+
+export const metadata: Metadata = {
+  title: "Glossaire des emojis par catégories",
+  description:
+    "Découvrez tous les emojis classés par thématique : sexualité, flirt, insultes, drogue, argent, émotions… Comprenez leur signification cachée.",
+  alternates: { canonical: '/glossaire' },
+  openGraph: {
+    title: "Glossaire des emojis par catégories | DecodEmojis",
+    description:
+      "Tous les emojis classés par thématique pour décoder le langage codé en ligne.",
+    url: '/glossaire',
+    type: 'website',
+  },
+};
 
 export default async function Glossaire() {
   const emojis = await getAllEmojis();

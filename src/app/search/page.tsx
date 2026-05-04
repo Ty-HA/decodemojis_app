@@ -1,8 +1,17 @@
+import type { Metadata } from 'next';
 import { Suspense } from 'react';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SearchBar from '@/components/SearchBar';
+
+export const metadata: Metadata = {
+  title: "Rechercher un emoji",
+  description:
+    "Recherchez la signification d'un emoji par symbole, mot-clé ou tag dans le dictionnaire DecodEmojis.",
+  alternates: { canonical: '/search' },
+  robots: { index: true, follow: true },
+};
 import EmojiGrid from '@/components/EmojiGrid';
 import { getAllEmojis, searchEmojis } from '@/utils/emoji-utils';
 

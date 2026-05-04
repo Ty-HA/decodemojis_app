@@ -1,6 +1,14 @@
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: "Conditions générales d'utilisation",
+  description: "Conditions générales d'utilisation du site DecodEmojis.",
+  alternates: { canonical: '/cgu' },
+  robots: { index: false, follow: true },
+};
 
 export default function CGUPage() {
   return (

@@ -1,10 +1,11 @@
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ShareButton from '@/components/ShareButton';
-import { 
-  getAllEmojis, 
-  getEmojiBySymbol, 
-  decodeEmojiFromUrl, 
+import {
+  getAllEmojis,
+  getEmojiBySymbol,
+  decodeEmojiFromUrl,
   encodeEmojiForUrl,
   normalizeEmoji
 } from '@/utils/emoji-utils';
@@ -16,6 +17,56 @@ export async function generateStaticParams() {
   return emojis.map((emoji) => ({
     symbol: encodeEmojiForUrl(emoji.emoji),
   }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ symbol: string }>;
+}): Promise<Metadata> {
+  const { symbol } = await params;
+  const decodedSymbol = decodeEmojiFromUrl(symbol);
+  const emojis = await getAllEmojis();
+  const emoji = getEmojiBySymbol(emojis, decodedSymbol);
+
+  if (!emoji) {
+    return {
+      title: 'Emoji introuvable',
+      robots: { index: false, follow: false },
+    };
+  }
+
+  const title = `${emoji.emoji} Signification de l'emoji ${emoji.emoji}`;
+  const description = emoji.signification.length > 160
+    ? emoji.signification.slice(0, 157) + '…'
+    : emoji.signification;
+  const path = `/emoji/${encodeEmojiForUrl(emoji.emoji)}`;
+
+  return {
+    title,
+    description,
+    keywords: [
+      `signification ${emoji.emoji}`,
+      `emoji ${emoji.emoji}`,
+      ...emoji.tags,
+    ],
+    alternates: { canonical: path },
+    openGraph: {
+      type: 'article',
+      title,
+      description,
+      url: path,
+      locale: 'fr_FR',
+      tags: emoji.tags,
+      publishedTime: emoji.date_ajout,
+      modifiedTime: emoji.date_ajout,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+    },
+  };
 }
 
 export default async function EmojiDetailPage({ params }: { params: Promise<{ symbol: string }> }) {
@@ -33,9 +84,47 @@ export default async function EmojiDetailPage({ params }: { params: Promise<{ sy
     month: 'long',
     day: 'numeric',
   });
-  
+
+  const siteUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://decodemojis.fr';
+  const pageUrl = `${siteUrl}/emoji/${encodeEmojiForUrl(emoji.emoji)}`;
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'DefinedTerm',
+    '@id': pageUrl,
+    name: emoji.emoji,
+    description: emoji.signification,
+    inDefinedTermSet: {
+      '@type': 'DefinedTermSet',
+      name: 'DecodEmojis',
+      url: siteUrl,
+    },
+    inLanguage: 'fr-FR',
+    url: pageUrl,
+    keywords: emoji.tags.join(', '),
+    dateModified: emoji.date_ajout,
+  };
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: siteUrl },
+      { '@type': 'ListItem', position: 2, name: 'Glossaire', item: `${siteUrl}/glossaire` },
+      { '@type': 'ListItem', position: 3, name: emoji.emoji, item: pageUrl },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <Header />
       <main className="container mx-auto px-4 py-8">
         {/* Navigation links */}
@@ -62,7 +151,9 @@ export default async function EmojiDetailPage({ params }: { params: Promise<{ sy
               <div className="relative inline-block">
                 {/* Pulsing glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-rose-400 rounded-full blur-3xl opacity-30 animate-pulse"></div>
-                <span className="text-9xl relative z-10 mb-6 inline-block transform hover:scale-125 transition-transform duration-500 hover:rotate-12">{emoji.emoji}</span>
+                <h1 className="text-9xl relative z-10 mb-6 inline-block transform hover:scale-125 transition-transform duration-500 hover:rotate-12 leading-none">
+                  <span aria-label={`Signification de l'emoji ${emoji.emoji}`}>{emoji.emoji}</span>
+                </h1>
               </div>
               
               {/* Tags */}

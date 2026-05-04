@@ -1,6 +1,14 @@
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: "Mentions légales",
+  description: "Mentions légales du site DecodEmojis.",
+  alternates: { canonical: '/mentions-legales' },
+  robots: { index: false, follow: true },
+};
 
 export default function MentionsLegalesPage() {
   return (

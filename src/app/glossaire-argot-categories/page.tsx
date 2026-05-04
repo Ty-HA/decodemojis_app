@@ -1,6 +1,20 @@
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: "Argot des jeunes par catégories",
+  description:
+    "Mots et expressions de l'argot des jeunes regroupés par thématiques pour mieux comprendre le langage ado.",
+  alternates: { canonical: '/glossaire-argot-categories' },
+  openGraph: {
+    title: "Argot des jeunes par catégories | DecodEmojis",
+    description: "L'argot des jeunes classé par catégories thématiques.",
+    url: '/glossaire-argot-categories',
+    type: 'website',
+  },
+};
 
 // Fonction pour récupérer les argots
 async function getArgots() {

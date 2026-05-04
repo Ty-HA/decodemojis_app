@@ -1,8 +1,22 @@
+import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { getAllEmojis } from '@/utils/emoji-utils';
 import Link from 'next/link';
 import { Emoji } from '@/types';
+
+export const metadata: Metadata = {
+  title: "Glossaire alphabétique des emojis",
+  description:
+    "Liste alphabétique de tous les emojis et de leur signification, triés par première lettre de leur définition.",
+  alternates: { canonical: '/glossaire-alphabetique' },
+  openGraph: {
+    title: "Glossaire alphabétique des emojis | DecodEmojis",
+    description: "Tous les emojis triés par ordre alphabétique de leur signification.",
+    url: '/glossaire-alphabetique',
+    type: 'website',
+  },
+};
 
 export default async function GlossaireAlphabetique() {
   const emojis = await getAllEmojis();
