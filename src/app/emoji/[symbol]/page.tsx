@@ -85,7 +85,7 @@ export default async function EmojiDetailPage({ params }: { params: Promise<{ sy
     day: 'numeric',
   });
 
-  const siteUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://decodemojis.fr';
+  const siteUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://decodemojis.vercel.app';
   const pageUrl = `${siteUrl}/emoji/${encodeEmojiForUrl(emoji.emoji)}`;
 
   const jsonLd = {

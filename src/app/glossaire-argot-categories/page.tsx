@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 async function getArgots() {
   try {
     // Essayer de récupérer les argots depuis le fichier JSON
-    const url = new URL('/argots.json', process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : process.env.NEXT_PUBLIC_BASE_URL || 'https://decodemojis.fr');
+    const url = new URL('/argots.json', process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : process.env.NEXT_PUBLIC_BASE_URL || 'https://decodemojis.vercel.app');
     const res = await fetch(url.toString(), {
       next: { revalidate: 3600 } // Mettre en cache pendant 1 heure
     });

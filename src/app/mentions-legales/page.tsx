@@ -26,7 +26,7 @@ export default function MentionsLegalesPage() {
               </p>
               <p className="mt-3">
                 <strong>Nom du site :</strong> DecodEmojis<br />
-                <strong>URL :</strong> www.decodemojis.fr<br />
+                <strong>URL :</strong> decodemojis.vercel.app<br />
                 <strong>Objet :</strong> Dictionnaire collaboratif d&apos;emojis
               </p>
             </section>

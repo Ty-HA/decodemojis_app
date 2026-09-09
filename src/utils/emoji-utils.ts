@@ -72,7 +72,7 @@ export async function getAllEmojis(): Promise<Emoji[]> {
       ? 'http://localhost:3000' 
       : typeof window !== 'undefined' 
         ? window.location.origin 
-        : process.env.NEXT_PUBLIC_BASE_URL || 'https://decodemojis.fr');
+        : process.env.NEXT_PUBLIC_BASE_URL || 'https://decodemojis.vercel.app');
     
     const res = await fetch(url.toString(), { next: { revalidate: 3600 } }); // Cache for 1 hour
     if (!res.ok) {

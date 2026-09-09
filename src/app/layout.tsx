@@ -5,7 +5,7 @@ import BottomBar from "@/components/BottomBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const SITE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://decodemojis.fr";
+const SITE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://decodemojis.vercel.app";
 const SITE_NAME = "DecodEmojis";
 const DEFAULT_TITLE = "DecodEmojis — Dictionnaire collaboratif des emojis et de leur signification";
 const DEFAULT_DESCRIPTION =
@@ -60,6 +60,9 @@ export const metadata: Metadata = {
     description: DEFAULT_DESCRIPTION,
     images: ["/icons/icon-512x512.png"],
   },
+  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+    : undefined,
   robots: {
     index: true,
     follow: true,

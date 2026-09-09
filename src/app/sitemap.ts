@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllEmojis, encodeEmojiForUrl } from "@/utils/emoji-utils";
 
-const SITE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://decodemojis.fr";
+const SITE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://decodemojis.vercel.app";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
