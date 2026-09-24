@@ -2283,5 +2283,49 @@
       "alerte"
     ],
     "date_ajout": "2026-05-04"
+  },
+  {
+    "emoji": "🇨🇭",
+    "signification": "Drapeau suisse : algospeak pour \"suicide\" sur TikTok. Sert à contourner la modération, qui bloque le mot écrit mais laisse passer l'emoji. Trois pistes d'origine circulent : la proximité sonore entre \"Suisse\" et \"suicide\", le suicide assisté autorisé en Suisse, et la ressemblance du drapeau avec une trousse de secours. Signal d'alerte sérieux dans un message d'ado. Documenté par Amnesty International, rapport sur l'algorithme de TikTok France, octobre 2025.",
+    "exemples": [
+      "Ce soir c'est 🇨🇭.",
+      "#🇨🇭 en légende d'une vidéo"
+    ],
+    "tags": [
+      "suicide",
+      "algospeak",
+      "alerte",
+      "santé mentale"
+    ],
+    "date_ajout": "2026-09-24"
+  },
+  {
+    "emoji": "🦓",
+    "signification": "Zèbre : algospeak pour la scarification, les rayures évoquant les cicatrices. Employé surtout en hashtag pour échapper aux filtres des plateformes. Signal d'alerte, à rapprocher de 🪒 et ✂️. Relevé dans la couverture du rapport Amnesty International sur TikTok, octobre 2025.",
+    "exemples": [
+      "#🦓 sous une photo de bras",
+      "Encore une soirée 🦓."
+    ],
+    "tags": [
+      "scarification",
+      "automutilation",
+      "algospeak",
+      "alerte"
+    ],
+    "date_ajout": "2026-09-24"
+  },
+  {
+    "emoji": "🎆",
+    "signification": "Feux d'artifice : dans l'immense majorité des cas, une célébration, une fête ou le nouvel an. Remonte aussi du terrain comme évocation d'un passage à l'acte, sur le registre de \"rejoindre les étoiles\", mais cet usage n'est à ce jour appuyé par aucune source publique vérifiable. Le rapport Amnesty documente en revanche l'imagerie des étoiles, avec des vidéos de scarifications en forme d'étoile. Ne jamais interpréter cet emoji isolément : il n'a de valeur d'alerte que combiné à d'autres signaux dans la conversation.",
+    "exemples": [
+      "Bonne année 🎆 (usage courant)",
+      "Bientôt je pars 🎆 (à recouper)"
+    ],
+    "tags": [
+      "santé mentale",
+      "algospeak",
+      "ambiguïté"
+    ],
+    "date_ajout": "2026-09-24"
   }
 ]

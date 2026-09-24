@@ -62,6 +62,28 @@ export function decodeEmojiFromUrl(encoded: string): string {
 }
 
 export async function getAllEmojis(): Promise<Emoji[]> {
+  // Méthode 0 (serveur uniquement) : lire le fichier sur le disque.
+  // Le fetch ci-dessous vise le site en ligne, qui sert encore le JSON du
+  // déploiement précédent. Un emoji ajouté n'obtiendrait donc sa page
+  // statique qu'au deuxième déploiement. Le disque, lui, est à jour.
+  if (typeof window === 'undefined') {
+    try {
+      const [{ readFile }, { join }] = await Promise.all([
+        import('node:fs/promises'),
+        import('node:path'),
+      ]);
+      const raw = await readFile(join(process.cwd(), 'public', 'emojis.json'), 'utf8');
+      const data: Emoji[] = JSON.parse(raw);
+      return data.map(emoji => ({
+        ...emoji,
+        emoji: normalizeEmoji(emoji.emoji),
+        exemples: emoji.exemples
+      }));
+    } catch {
+      // Fichier absent ou illisible : on retombe sur le fetch ci-dessous.
+    }
+  }
+
   // Méthode 1: essayer de charger via fetch API
   try {
     // In a real production environment, this would be a DB call
