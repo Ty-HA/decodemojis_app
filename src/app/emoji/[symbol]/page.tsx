@@ -12,6 +12,32 @@ import {
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
+// Numéros affichés directement sur la fiche quand les tags le justifient.
+// Un parent inquiet ne doit pas avoir à cliquer vers une autre page pour
+// trouver qui appeler.
+const HELPLINES = [
+  {
+    tags: ['suicide', 'automutilation', 'scarification'],
+    number: '3114',
+    name: 'Numéro national de prévention du suicide',
+    detail:
+      "Gratuit, confidentiel, 24h/24 et 7j/7. Des infirmiers et psychologues répondent, que vous soyez vous-même en souffrance ou inquiet pour un proche.",
+  },
+  {
+    tags: ['cyberharcèlement', 'harcèlement'],
+    number: '3018',
+    name: 'Violences numériques et cyberharcèlement',
+    detail:
+      'Gratuit, confidentiel, 7j/7. Peut obtenir en urgence le retrait de contenus sur les plateformes.',
+  },
+  {
+    tags: ['pédocriminalité', 'exploitation'],
+    number: '119',
+    name: 'Enfance en danger',
+    detail: 'Gratuit, 24h/24 et 7j/7. Par téléphone, SMS ou chat.',
+  },
+] as const;
+
 export async function generateStaticParams() {
   const emojis = await getAllEmojis();
   return emojis.map((emoji) => ({
@@ -79,6 +105,10 @@ export default async function EmojiDetailPage({ params }: { params: Promise<{ sy
     notFound();
   }
   
+  const helplines = HELPLINES.filter((h) =>
+    h.tags.some((t) => emoji.tags.includes(t))
+  );
+
   const formattedDate = new Date(emoji.date_ajout).toLocaleDateString('fr-FR', {
     year: 'numeric',
     month: 'long',
@@ -178,6 +208,36 @@ export default async function EmojiDetailPage({ params }: { params: Promise<{ sy
                 <div className="text-sm text-rose-900 leading-relaxed">
                   <strong className="font-bold">Signal d&apos;alerte.</strong> Cet emoji peut être associé à des contenus graves (drogue, automutilation, exploitation, haine). Un emoji isolé ne signifie rien : c&apos;est la <em>combinaison</em> avec d&apos;autres éléments (pseudo, contexte, changement de comportement) qui doit attirer l&apos;attention. Numéros et services officiels sur notre <Link href="/ressources" className="underline font-semibold">page Ressources</Link> (3018, 119, 3114, Pharos…).
                 </div>
+              </div>
+            )}
+
+            {helplines.length > 0 && (
+              <div className="mb-6 bg-emerald-50 border border-emerald-200 p-5 rounded-xl" role="complementary" aria-label="Numéros d'aide">
+                <h2 className="text-base font-black text-emerald-900 mb-4 flex items-center gap-2">
+                  <span className="text-xl" aria-hidden="true">🤝</span>
+                  Besoin d&apos;aide ou d&apos;un conseil ?
+                </h2>
+                <ul className="space-y-4">
+                  {helplines.map((h) => (
+                    <li key={h.number} className="flex flex-col sm:flex-row sm:items-center gap-3">
+                      <a
+                        href={`tel:${h.number}`}
+                        className="bg-emerald-600 text-white text-2xl font-black px-6 py-3 rounded-xl shadow-md hover:bg-emerald-700 transition-colors text-center shrink-0 sm:w-32"
+                        aria-label={`Appeler le ${h.number}, ${h.name}`}
+                      >
+                        {h.number}
+                      </a>
+                      <div className="text-sm text-emerald-900 leading-relaxed">
+                        <strong className="font-bold block">{h.name}</strong>
+                        {h.detail}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-xs text-emerald-800 mt-4">
+                  En cas de danger immédiat, appelez le <a href="tel:15" className="underline font-bold">15</a>. Autres services sur la{' '}
+                  <Link href="/ressources" className="underline font-semibold">page Ressources</Link>.
+                </p>
               </div>
             )}
 

@@ -75,17 +75,21 @@
   },
   {
     "emoji": "💊",
-    "signification": "Pilule rouge dans le contexte de la mouvance masculiniste/incel. Représente 'l'éveil' aux théories misogynes selon lesquelles les femmes manipuleraient les hommes.",
+    "signification": "Plusieurs sens, le contexte tranche. Pilule rouge dans la mouvance masculiniste et incel : \"l'éveil\" aux théories misogynes selon lesquelles les femmes manipuleraient les hommes. Désigne aussi des pilules utilisées comme drogues récréatives, ecstasy ou MDMA.",
     "exemples": [
-      "Il a pris la 💊 rouge, maintenant il comprend la vérité sur les femmes."
+      "Il a pris la 💊 rouge, maintenant il comprend la vérité sur les femmes.",
+      "Il va à la soirée avec des 💊"
     ],
     "tags": [
       "incel",
       "masculinisme",
+      "drogue",
+      "récréatif",
       "danger",
-      "idéologie"
+      "idéologie",
+      "code"
     ],
-    "date_ajout": "2025-06-19"
+    "date_ajout": "2026-09-24"
   },
   {
     "emoji": "🔵",
@@ -544,20 +548,6 @@
       "homophobie",
       "insulte",
       "discrimination"
-    ],
-    "date_ajout": "2025-06-22"
-  },
-  {
-    "emoji": "💊",
-    "signification": "Dans certains contextes, représente des pilules utilisées comme drogues récréatives (ecstasy, MDMA).",
-    "exemples": [
-      "Il va à la soirée avec des 💊"
-    ],
-    "tags": [
-      "drogue",
-      "récréatif",
-      "danger",
-      "code"
     ],
     "date_ajout": "2025-06-22"
   },
