@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://decodemojis.vercel.app";
+import { SITE_URL } from "@/utils/site-url";
 
 export default function robots(): MetadataRoute.Robots {
   return {

@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/utils/site-url";
 import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -115,7 +116,7 @@ export default async function EmojiDetailPage({ params }: { params: Promise<{ sy
     day: 'numeric',
   });
 
-  const siteUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://decodemojis.vercel.app';
+  const siteUrl = SITE_URL;
   const pageUrl = `${siteUrl}/emoji/${encodeEmojiForUrl(emoji.emoji)}`;
 
   const jsonLd = {
