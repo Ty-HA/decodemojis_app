@@ -1,0 +1,90 @@
+[
+  {
+    "path": "",
+    "http": "200",
+    "title": [
+      "DecodEmojis — Dictionnaire collaboratif des emojis et de leur signification"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://decodemojis.vercel.app\"/>"
+    ],
+    "emoji_urls": null,
+    "wrong_fr_origin": false
+  },
+  {
+    "path": "glossaire",
+    "http": "200",
+    "title": [
+      "Glossaire des emojis par catégories | DecodEmojis"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://decodemojis.vercel.app/glossaire\"/>"
+    ],
+    "emoji_urls": null,
+    "wrong_fr_origin": false
+  },
+  {
+    "path": "ressources",
+    "http": "200",
+    "title": [
+      "Ressources : signaler, écouter, comprendre | DecodEmojis"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://decodemojis.vercel.app/ressources\"/>"
+    ],
+    "emoji_urls": null,
+    "wrong_fr_origin": false
+  },
+  {
+    "path": "emoji/1f438",
+    "http": "200",
+    "title": [
+      "🐸 : que veut dire cet emoji ? | DecodEmojis"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://decodemojis.vercel.app/emoji/1f438\"/>"
+    ],
+    "emoji_urls": null,
+    "wrong_fr_origin": false
+  },
+  {
+    "path": "emoji/1f480",
+    "http": "200",
+    "title": [
+      "💀 : que veut dire cet emoji ? | DecodEmojis"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://decodemojis.vercel.app/emoji/1f480\"/>"
+    ],
+    "emoji_urls": null,
+    "wrong_fr_origin": false
+  },
+  {
+    "path": "emoji/1f351",
+    "http": "200",
+    "title": [
+      "🍑 : que veut dire cet emoji ? | DecodEmojis"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://decodemojis.vercel.app/emoji/1f351\"/>"
+    ],
+    "emoji_urls": null,
+    "wrong_fr_origin": false
+  },
+  {
+    "path": "sitemap.xml",
+    "http": "200",
+    "title": [],
+    "canonical": [],
+    "emoji_urls": 182,
+    "wrong_fr_origin": false
+  },
+  {
+    "path": "robots.txt",
+    "http": "200",
+    "title": [],
+    "canonical": [],
+    "emoji_urls": null,
+    "wrong_fr_origin": false
+  }
+]
