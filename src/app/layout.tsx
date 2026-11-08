@@ -60,9 +60,9 @@ export const metadata: Metadata = {
     description: DEFAULT_DESCRIPTION,
     images: ["/icons/icon-512x512.png"],
   },
-  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
-    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
-    : undefined,
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "TofunBds6UvBJwox38Rz5La5vylLT9gKEcecIVEslbo",
+  },
   robots: {
     index: true,
     follow: true,
