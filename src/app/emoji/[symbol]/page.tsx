@@ -63,10 +63,11 @@ export async function generateMetadata({
     };
   }
 
-  const title = `${emoji.emoji} Signification de l'emoji ${emoji.emoji}`;
-  const description = emoji.signification.length > 160
-    ? emoji.signification.slice(0, 157) + '…'
-    : emoji.signification;
+  const title = `${emoji.emoji} : que veut dire cet emoji ?`;
+  const summary = `${emoji.emoji} : ${emoji.signification}`;
+  const description = summary.length > 160
+    ? summary.slice(0, 157) + '…'
+    : summary;
   const path = `/emoji/${encodeEmojiForUrl(emoji.emoji)}`;
 
   return {
@@ -106,6 +107,13 @@ export default async function EmojiDetailPage({ params }: { params: Promise<{ sy
     notFound();
   }
   
+  const related = emojis
+    .filter((entry) => entry.emoji !== emoji.emoji)
+    .map((entry) => ({ entry, score: entry.tags.filter((tag) => emoji.tags.includes(tag) && tag !== 'alerte').length }))
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 6);
+
   const helplines = HELPLINES.filter((h) =>
     h.tags.some((t) => emoji.tags.includes(t))
   );
@@ -150,14 +158,21 @@ export default async function EmojiDetailPage({ params }: { params: Promise<{ sy
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, '\\u003c') }}
       />
       <Header />
       <main className="container mx-auto px-4 py-8">
+        <nav aria-label="Fil d’Ariane" className="mb-6 text-sm text-indigo-800">
+          <ol className="flex flex-wrap gap-2">
+            <li><Link href="/">Accueil</Link> /</li>
+            <li><Link href="/glossaire">Glossaire</Link> /</li>
+            <li aria-current="page">{emoji.emoji}</li>
+          </ol>
+        </nav>
         {/* Navigation links */}
         <div className="flex mb-6 items-center">
           <Link href="/" className="text-indigo-600 hover:text-indigo-800 flex items-center group bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-all">
@@ -282,6 +297,20 @@ export default async function EmojiDetailPage({ params }: { params: Promise<{ sy
               </div>
             )}
             
+            {related.length > 0 && (
+              <section aria-labelledby="related-emojis" className="my-8">
+                <h2 id="related-emojis" className="text-xl font-bold text-indigo-900">Emojis aux thèmes proches</h2>
+                <ul className="mt-4 flex flex-wrap gap-4">
+                  {related.map(({ entry }) => (
+                    <li key={entry.emoji}>
+                      <Link className="underline text-indigo-800" href={`/emoji/${encodeEmojiForUrl(entry.emoji)}`}>
+                        {entry.emoji} : signification
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
             {/* Call to action */}
             <div className="pt-6 mt-10 border-t border-indigo-100">
               <div className="bg-gradient-to-r from-indigo-600 to-purple-600 p-6 rounded-2xl shadow-lg text-white relative overflow-hidden">

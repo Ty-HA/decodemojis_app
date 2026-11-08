@@ -1,0 +1,61 @@
+
+> decodemojis_app@0.1.0 build
+> next build
+
+   ▲ Next.js 15.5.15
+   - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+> [PWA] Compile server
+> [PWA] Compile server
+> [PWA] Compile client (static)
+> [PWA] Auto register service worker with: /Users/tyha/Projects-Ty-HA/web/decodemojis_app/node_modules/next-pwa/register.js
+> [PWA] Service worker: /Users/tyha/Projects-Ty-HA/web/decodemojis_app/public/sw.js
+> [PWA]   url: /sw.js
+> [PWA]   scope: /
+Browserslist: browsers data (caniuse-lite) is 7 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+ ✓ Compiled successfully in 4.8s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/201) ...
+   Generating static pages (50/201) 
+   Generating static pages (100/201) 
+   Generating static pages (150/201) 
+ ✓ Generating static pages (201/201)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS  Revalidate  Expire
+┌ ○ /                                    8.29 kB         116 kB
+├ ○ /_not-found                            138 B         102 kB
+├ ○ /apple-icon.png                          0 B            0 B
+├ ○ /cgu                                   200 B         108 kB
+├ ○ /contact                             1.95 kB         109 kB
+├ ● /emoji/[symbol]                        546 B         108 kB
+├   ├ /emoji/1f351
+├   ├ /emoji/1f4a6
+├   ├ /emoji/1f525
+├   └ [+179 more paths]
+├ ○ /glossaire                             200 B         108 kB
+├ ○ /glossaire-alphabetique                200 B         108 kB
+├ ○ /glossaire-argot                       200 B         108 kB          1h      1y
+├ ○ /glossaire-argot-categories            200 B         108 kB          1h      1y
+├ ○ /icon.svg                                0 B            0 B
+├ ○ /mentions-legales                      200 B         108 kB
+├ ○ /proposer                            2.18 kB         110 kB
+├ ○ /ressources                            200 B         108 kB
+├ ○ /robots.txt                            138 B         102 kB
+├ ƒ /search                              2.07 kB         109 kB
+└ ○ /sitemap.xml                           138 B         102 kB
++ First Load JS shared by all             102 kB
+  ├ chunks/255-4f212684648fcab9.js         46 kB
+  ├ chunks/4bd1b696-c023c6e3521b1417.js  54.2 kB
+  └ other shared chunks (total)          1.92 kB
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

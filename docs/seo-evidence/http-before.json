@@ -1,0 +1,129 @@
+[
+  {
+    "url": "https://decodemojis.fr/robots.txt",
+    "status": "000 https://decodemojis.fr/robots.txt",
+    "error": "curl: (6) Could not resolve host: decodemojis.fr\n",
+    "headers": "",
+    "tags": [],
+    "jsonld": [],
+    "xml": ""
+  },
+  {
+    "url": "https://decodemojis.fr/sitemap.xml",
+    "status": "000 https://decodemojis.fr/sitemap.xml",
+    "error": "curl: (6) Could not resolve host: decodemojis.fr\n",
+    "headers": "",
+    "tags": [],
+    "jsonld": [],
+    "xml": ""
+  },
+  {
+    "url": "https://decodemojis.fr/",
+    "status": "000 https://decodemojis.fr/",
+    "error": "curl: (6) Could not resolve host: decodemojis.fr\n",
+    "headers": "",
+    "tags": [],
+    "jsonld": [],
+    "xml": ""
+  },
+  {
+    "url": "https://decodemojis.fr/glossaire",
+    "status": "000 https://decodemojis.fr/glossaire",
+    "error": "curl: (6) Could not resolve host: decodemojis.fr\n",
+    "headers": "",
+    "tags": [],
+    "jsonld": [],
+    "xml": ""
+  },
+  {
+    "url": "https://decodemojis.fr/ressources",
+    "status": "000 https://decodemojis.fr/ressources",
+    "error": "curl: (6) Could not resolve host: decodemojis.fr\n",
+    "headers": "",
+    "tags": [],
+    "jsonld": [],
+    "xml": ""
+  },
+  {
+    "url": "https://decodemojis.fr/emoji/1f438",
+    "status": "000 https://decodemojis.fr/emoji/1f438",
+    "error": "curl: (6) Could not resolve host: decodemojis.fr\n",
+    "headers": "",
+    "tags": [],
+    "jsonld": [],
+    "xml": ""
+  },
+  {
+    "url": "https://decodemojis.fr/emoji/1f480",
+    "status": "000 https://decodemojis.fr/emoji/1f480",
+    "error": "curl: (6) Could not resolve host: decodemojis.fr\n",
+    "headers": "",
+    "tags": [],
+    "jsonld": [],
+    "xml": ""
+  },
+  {
+    "url": "https://decodemojis.fr/emoji/1f351",
+    "status": "000 https://decodemojis.fr/emoji/1f351",
+    "error": "curl: (6) Could not resolve host: decodemojis.fr\n",
+    "headers": "",
+    "tags": [],
+    "jsonld": [],
+    "xml": ""
+  },
+  {
+    "url": "http://decodemojis.fr",
+    "status": "000 http://decodemojis.fr/",
+    "error": "curl: (6) Could not resolve host: decodemojis.fr\n",
+    "headers": "",
+    "tags": [],
+    "jsonld": [],
+    "xml": ""
+  },
+  {
+    "url": "https://www.decodemojis.fr",
+    "status": "000 https://www.decodemojis.fr/",
+    "error": "curl: (6) Could not resolve host: www.decodemojis.fr\n",
+    "headers": "",
+    "tags": [],
+    "jsonld": [],
+    "xml": ""
+  },
+  {
+    "url": "http://www.decodemojis.fr",
+    "status": "000 http://www.decodemojis.fr/",
+    "error": "curl: (6) Could not resolve host: www.decodemojis.fr\n",
+    "headers": "",
+    "tags": [],
+    "jsonld": [],
+    "xml": ""
+  },
+  {
+    "url": "https://decodemojis.vercel.app",
+    "status": "200 https://decodemojis.vercel.app/",
+    "error": "",
+    "headers": "HTTP/2 200 \naccept-ranges: bytes\naccess-control-allow-origin: *\nage: 1010005\ncache-control: public, max-age=0, must-revalidate\ncontent-disposition: inline\ncontent-type: text/html; charset=utf-8\ndate: Sun, 08 Nov 2026 14:20:20 GMT\netag: \"adac670555047233cee0a06cb771dbb1\"\nserver: Vercel\nstrict-transport-security: max-age=63072000; includeSubDomains; preload\nvary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch\nx-matched-path: /\nx-nextjs-prerender: 1\nx-nextjs-stale-time: 300\nx-vercel-cache: HIT\nx-vercel-id: cdg1::72w4w-1794147620118-c629f2be5fc1\ncontent-length: 74673\n\n",
+    "tags": [
+      "<html lang=\"fr\">",
+      "<title>DecodEmojis — Dictionnaire collaboratif des emojis et de leur signification</title>",
+      "<meta name=\"description\" content=\"Dictionnaire collaboratif francophone pour décoder la signification des emojis et de l&#x27;argot des jeunes. Aidez parents, éducateurs et ados à comprendre le langage codé en ligne.\"/>",
+      "<meta name=\"robots\" content=\"index, follow\"/>",
+      "<link rel=\"canonical\" href=\"https://decodemojis.vercel.app\"/>",
+      "<meta property=\"og:title\" content=\"DecodEmojis — Dictionnaire collaboratif des emojis et de leur signification\"/>",
+      "<meta property=\"og:description\" content=\"Dictionnaire collaboratif francophone pour décoder la signification des emojis et de l&#x27;argot des jeunes. Aidez parents, éducateurs et ados à comprendre le langage codé en ligne.\"/>",
+      "<meta property=\"og:url\" content=\"https://decodemojis.vercel.app\"/>",
+      "<meta property=\"og:site_name\" content=\"DecodEmojis\"/>",
+      "<meta property=\"og:locale\" content=\"fr_FR\"/>",
+      "<meta property=\"og:image\" content=\"https://decodemojis.vercel.app/icons/icon-512x512.png\"/>",
+      "<meta property=\"og:image:width\" content=\"512\"/>",
+      "<meta property=\"og:image:height\" content=\"512\"/>",
+      "<meta property=\"og:image:alt\" content=\"DecodEmojis\"/>",
+      "<meta property=\"og:type\" content=\"website\"/>"
+    ],
+    "jsonld": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"name\":\"DecodEmojis\",\"url\":\"https://decodemojis.vercel.app\",\"inLanguage\":\"fr-FR\",\"description\":\"Dictionnaire collaboratif francophone pour décoder la signification des emojis et de l'argot des jeunes. Aidez parents, éducateurs et ados à comprendre le langage codé en ligne.\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://decodemojis.vercel.app/search?q={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"BTHA System\",\"url\":\"https://decodemojis.vercel.app\",\"logo\":\"https://decodemojis.vercel.app/icons/icon-512x512.png\"}"
+    ],
+    "xml": ""
+  }
+]
