@@ -70,6 +70,14 @@ const sources: LinkItem[] = [
 
 const actualites: { titre: string; date: string; resume: string; href: string; source: string }[] = [
   {
+    titre: 'Orange : « Connaissez-vous les codes de vos ados ? » (#ForGoodConnections)',
+    date: 'Novembre 2026',
+    resume:
+      "Campagne de sensibilisation lancée pour la Journée internationale de lutte contre le harcèlement à l'école. Selon une étude Orange x Ifop, près d'un parent sur deux ne reconnaît pas les emojis utilisés pour harceler. Dans le film, des ados décodent : 🐸 = « tu es moche », 🍜 = demande de nudes, 🧨🩸 = code incel, ainsi que des emojis de drogues. Témoignages d'ados recueillis dans une campagne de marque, à lire comme des exemples et non comme des règles générales.",
+    href: 'https://www.youtube.com/watch?v=pNVuXXgvBVQ',
+    source: 'Orange (vidéo officielle) · La Réclame',
+  },
+  {
     titre: 'Verdict du procès des viols de Mazan (affaire Pelicot)',
     date: '19 décembre 2024',
     resume:

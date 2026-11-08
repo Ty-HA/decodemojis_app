@@ -106,15 +106,19 @@
   },
   {
     "emoji": "🧨",
-    "signification": "Dans le contexte incel, symbolise une 'pilule rouge qui explose', indiquant une radicalisation extrême vers les idéologies misogynes.",
+    "signification": "Dans le contexte incel, symbolise une 'pilule rouge qui explose', indiquant une radicalisation extrême vers les idéologies misogynes. Associé à 🩸 (🧨🩸), c'est un code de la manosphère : haine des filles, souvent affiché sur les réseaux sociaux de certains ados.",
     "exemples": [
-      "Ce forum l'a 🧨, il ne parle plus que de ça."
+      "Ce forum l'a 🧨, il ne parle plus que de ça.",
+      "🧨🩸 en bio ou en commentaire = code incel / misogyne."
     ],
     "tags": [
       "incel",
       "masculinisme",
       "radicalisation",
-      "danger"
+      "danger",
+      "harcèlement",
+      "misogynie",
+      "ado"
     ],
     "date_ajout": "2025-06-19"
   },
@@ -694,17 +698,20 @@
   },
   {
     "emoji": "🩸",
-    "signification": "Plusieurs sens. Règles, blessure, mais aussi marqueur d'automutilation (combiné à 🪒 ou ✂️) et code dealer pour l'injection de drogues.",
+    "signification": "Plusieurs sens. Règles, blessure, mais aussi marqueur d'automutilation (combiné à 🪒 ou ✂️) et code dealer pour l'injection de drogues. Associé à 🧨 (🧨🩸), c'est aussi un code incel / misogyne (« pilule rouge » et violence).",
     "exemples": [
       "🪒🩸 = scarification.",
-      "🩸 ce mois-ci."
+      "🩸 ce mois-ci.",
+      "🧨🩸 en commentaire = code incel."
     ],
     "tags": [
       "scarification",
       "automutilation",
       "détresse",
       "danger",
-      "alerte"
+      "alerte",
+      "incel",
+      "misogynie"
     ],
     "date_ajout": "2026-05-04"
   },
@@ -1570,25 +1577,29 @@
   },
   {
     "emoji": "🍝",
-    "signification": "\"Noods\" / \"noodles\" : nudes. Algospeak très répandu.",
+    "signification": "\"Noods\" / \"noodles\" : nudes. Algospeak très répandu. Attention : une photo intime envoyée peut être rediffusée à toute une classe en quelques heures (diffusion non consentie, punie par la loi). Aide : 3018.",
     "exemples": [
       "Envoie tes 🍝."
     ],
     "tags": [
       "sexualité",
-      "nudes"
+      "nudes",
+      "danger",
+      "harcèlement"
     ],
     "date_ajout": "2026-05-04"
   },
   {
     "emoji": "🍜",
-    "signification": "Variante algospeak pour \"nudes\".",
+    "signification": "Variante algospeak pour \"nudes\". Attention : une photo intime envoyée peut être rediffusée à toute une classe en quelques heures (diffusion non consentie, punie par la loi). Aide : 3018.",
     "exemples": [
       "Tu m'envoies des 🍜 ?"
     ],
     "tags": [
       "sexualité",
-      "nudes"
+      "nudes",
+      "danger",
+      "harcèlement"
     ],
     "date_ajout": "2026-05-04"
   },
@@ -1818,14 +1829,18 @@
   },
   {
     "emoji": "🐸",
-    "signification": "Pepe the Frog : symbole alt-right / suprémaciste blanc depuis 2016 (déclaré symbole de haine par l'ADL).",
+    "signification": "Deux sens à connaître. 1) Harcèlement : chez certains ados, recevoir un 🐸 signifie « tu es moche » ; envoyé en groupe ou en commentaire, il sert à s'acharner sur une personne. 2) Pepe the Frog : symbole alt-right / suprémaciste blanc depuis 2016 (déclaré symbole de haine par l'ADL). Le contexte (message reçu par un élève, ou profil avec drapeaux et slogans) permet de trancher.",
     "exemples": [
+      "Toute la classe a commenté sa photo avec des 🐸 = harcèlement (« t'es moche »).",
       "🐸 + drapeau US sur un profil = compte alt-right."
     ],
     "tags": [
       "extrémisme",
       "racisme",
-      "alerte"
+      "alerte",
+      "harcèlement",
+      "cyberharcèlement",
+      "ado"
     ],
     "date_ajout": "2026-05-04"
   },
