@@ -106,10 +106,11 @@
   },
   {
     "emoji": "🧨",
-    "signification": "Dans le contexte incel, symbolise une 'pilule rouge qui explose', indiquant une radicalisation extrême vers les idéologies misogynes. Associé à 🩸 (🧨🩸), c'est un code de la manosphère : haine des filles, souvent affiché sur les réseaux sociaux de certains ados.",
+    "signification": "Dans le contexte incel, symbolise une 'pilule rouge qui explose', indiquant une radicalisation extrême vers les idéologies misogynes. Associé à 🩸 (🧨🩸), c'est un code de la manosphère : haine des filles, souvent affiché sur les réseaux sociaux de certains ados. Associé au « 100 » (🧨💯), il évoque aussi les codes misogynes incel, d'après la campagne Orange #ForGoodConnections (nov. 2026).",
     "exemples": [
       "Ce forum l'a 🧨, il ne parle plus que de ça.",
-      "🧨🩸 en bio ou en commentaire = code incel / misogyne."
+      "🧨🩸 en bio ou en commentaire = code incel / misogyne.",
+      "🧨💯 = code incel / misogyne."
     ],
     "tags": [
       "incel",
@@ -120,20 +121,23 @@
       "misogynie",
       "ado"
     ],
-    "date_ajout": "2025-06-19"
+    "date_ajout": "2026-11-11"
   },
   {
     "emoji": "💯",
-    "signification": "Utilisé pour la 'règle des 80/20' dans les communautés incels, théorie selon laquelle 80% des femmes seraient attirées par seulement 20% des hommes.",
+    "signification": "Utilisé pour la 'règle des 80/20' dans les communautés incels, théorie selon laquelle 80% des femmes seraient attirées par seulement 20% des hommes. Associé à la dynamite (🧨💯), c'est un code misogyne de la mouvance incel, cité par des ados dans la campagne Orange #ForGoodConnections (nov. 2026).",
     "exemples": [
-      "C'est la règle 💯 qui s'applique sur les applications de rencontre."
+      "C'est la règle 💯 qui s'applique sur les applications de rencontre.",
+      "🧨💯 en commentaire ou en pseudo = code incel / misogyne."
     ],
     "tags": [
       "incel",
       "masculinisme",
-      "théorie"
+      "théorie",
+      "misogynie",
+      "alerte"
     ],
-    "date_ajout": "2025-06-19"
+    "date_ajout": "2026-11-11"
   },
   {
     "emoji": "🫘",
@@ -1025,15 +1029,18 @@
   },
   {
     "emoji": "🎱",
-    "signification": "\"8-ball\" : 3,5 g de cocaïne (un huitième d'once).",
+    "signification": "\"8-ball\" : cocaïne (à l'origine 3,5 g, un huitième d'once). Code repris par les ados : dans la campagne Orange #ForGoodConnections (nov. 2026), la boule n° 8 qui passe de main en main désigne la cocaïne.",
     "exemples": [
-      "Un 🎱 pour la soirée."
+      "Un 🎱 pour la soirée.",
+      "Une 🎱 envoyée en message privé = proposition de cocaïne."
     ],
     "tags": [
       "drogue",
-      "cocaïne"
+      "cocaïne",
+      "ado",
+      "alerte"
     ],
-    "date_ajout": "2026-05-04"
+    "date_ajout": "2026-11-11"
   },
   {
     "emoji": "🐡",
@@ -1587,7 +1594,7 @@
       "danger",
       "harcèlement"
     ],
-    "date_ajout": "2026-05-04"
+    "date_ajout": "2026-11-11"
   },
   {
     "emoji": "🍜",
@@ -1601,7 +1608,7 @@
       "danger",
       "harcèlement"
     ],
-    "date_ajout": "2026-05-04"
+    "date_ajout": "2026-11-11"
   },
   {
     "emoji": "🥵",
@@ -1842,7 +1849,7 @@
       "cyberharcèlement",
       "ado"
     ],
-    "date_ajout": "2026-05-04"
+    "date_ajout": "2026-11-11"
   },
   {
     "emoji": "🥝",

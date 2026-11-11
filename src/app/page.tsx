@@ -3,16 +3,15 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 import EmojiGrid from '@/components/EmojiGrid';
-import { getAllEmojis, sortEmojisByDate } from '@/utils/emoji-utils';
+import { getAllEmojis, sortEmojisByDate, encodeEmojiForUrl } from '@/utils/emoji-utils';
 import HeroSection from '@/components/HeroSection';
 import EmojiHeader from '@/components/EmojiHeader';
 
-const LATEST_REVISION = '2026-05-04';
+const LATEST_REVISION = '2026-11-11';
 
 export default async function Home() {
   const emojis = await getAllEmojis();
   const recentEmojis = sortEmojisByDate(emojis).slice(0, 10);
-  const recentlyAddedCount = emojis.filter((e) => e.date_ajout >= '2026-05-01').length;
   const formattedRevision = new Date(LATEST_REVISION).toLocaleDateString('fr-FR', {
     year: 'numeric',
     month: 'long',
@@ -49,17 +48,24 @@ export default async function Home() {
                 </time>
               </div>
               <h2 id="news-heading" className="text-lg md:text-2xl font-black text-indigo-900 mb-2 leading-snug">
-                +{recentlyAddedCount} nouvelles définitions et une page Ressources officielle
+                🐸 🍜 🎱 🧨💯 Les codes révélés par la campagne Orange
               </h2>
               <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-                Drogues (codes DEA), codes manosphère / incel, brainrot Gen Alpha,
-                symboles d&apos;extrémisme (sources ADL), réseau FBI 764, soumission
-                chimique. Une <Link href="/ressources" className="font-bold text-indigo-700 underline decoration-indigo-300 hover:decoration-indigo-700">page Ressources</Link>{' '}
-                centralise désormais les numéros d&apos;urgence (3018, 119, 3114), les
-                outils de signalement (Pharos) et toutes les sources documentaires.
+                La grenouille pour dire « t&apos;es moche », les nouilles pour demander
+                des nudes, la boule n° 8 pour la cocaïne, la dynamite + 💯 pour les codes
+                incel. Fiches mises à jour d&apos;après la campagne #ForGoodConnections
+                d&apos;Orange (sources sur la{' '}
+                <Link href="/ressources" className="font-bold text-indigo-700 underline decoration-indigo-300 hover:decoration-indigo-700">page Ressources</Link>).
+                En cas de harcèlement, appelez le 3018.
               </p>
             </div>
             <div className="flex flex-row md:flex-col gap-2 md:shrink-0">
+              <Link
+                href={`/emoji/${encodeEmojiForUrl('🐸')}`}
+                className="text-center bg-amber-400 text-amber-950 font-bold px-5 py-2.5 rounded-full hover:bg-amber-300 transition-colors shadow-md text-sm"
+              >
+                Voir la fiche 🐸
+              </Link>
               <Link
                 href="/glossaire"
                 className="text-center bg-indigo-600 text-white font-bold px-5 py-2.5 rounded-full hover:bg-indigo-700 transition-colors shadow-md text-sm"

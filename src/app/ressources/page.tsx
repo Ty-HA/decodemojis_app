@@ -65,6 +65,8 @@ const sources: LinkItem[] = [
   { label: 'FBI — Alerte sur le réseau 764 (2025)', href: 'https://www.fbi.gov/investigate/cyber/alerts/2025/violent-online-networks-target-vulnerable-and-underage-populations-across-the-united-states-and-around-the-globe', desc: 'Alerte officielle du FBI sur les réseaux d\'extorsion ciblant les mineurs.', external: true },
   { label: 'ADL — Coded Hate (emojis détournés)', href: 'https://www.adl.org/resources/article/coded-hate-extremists-weaponize-seemingly-innocuous-content-promote-bigotry', desc: 'Anti-Defamation League. Référence académique sur les emojis détournés par les extrémistes.', external: true },
   { label: 'ADL — Hate Symbols Database', href: 'https://www.adl.org/hate-symbols', desc: 'Base de données de référence sur les symboles de haine (Pepe 🐸, codes numériques 1488, 88, 14, etc.).', external: true },
+  { label: 'Orange × Ifop — « Cyberharcèlement : un emoji peut en cacher bien plus qu\'on ne croit » (2026)', href: 'https://www.orange.com/fr/communiques/cyberharcelement-un-emoji-peut-en-cacher-bien-plus-quon-ne-croit-517726', desc: 'Communiqué et étude auprès de 1 000 parents de collégiens et lycéens. Source des codes 🐸, 🍜, 🎱 et 🧨💯.', external: true },
+  { label: 'Creapills — Orange décrypte les émojis des ados (5 nov. 2026)', href: 'https://creapills.com/orange-emojis-cyberharcelement-parents-20261105', desc: 'Article sur la campagne #ForGoodConnections : 🐸 = « t\'es moche », 🍜 = nudes, 🎱 = cocaïne, 🧨💯 = code incel.', external: true },
   { label: 'Service-Public.gouv.fr — Cyberharcèlement', href: 'https://www.service-public.gouv.fr/particuliers/vosdroits/F32239', desc: 'Cadre légal officiel et démarches en France.', external: true },
 ];
 
@@ -73,7 +75,7 @@ const actualites: { titre: string; date: string; resume: string; href: string; s
     titre: 'Orange : « Connaissez-vous les codes de vos ados ? » (#ForGoodConnections)',
     date: 'Novembre 2026',
     resume:
-      "Campagne de sensibilisation lancée pour la Journée internationale de lutte contre le harcèlement à l'école. Selon une étude Orange x Ifop, près d'un parent sur deux ne reconnaît pas les emojis utilisés pour harceler. Dans le film, des ados décodent : 🐸 = « tu es moche », 🍜 = demande de nudes, 🧨🩸 = code incel, ainsi que des emojis de drogues. Témoignages d'ados recueillis dans une campagne de marque, à lire comme des exemples et non comme des règles générales.",
+      "Campagne de sensibilisation lancée pour la Journée internationale de lutte contre le harcèlement à l'école. Selon une étude Orange x Ifop, près d'un parent sur deux ne reconnaît pas les emojis utilisés pour harceler. Dans le film, des ados décodent : 🐸 = « tu es moche », 🍜 = demande de nudes, 🎱 (boule n° 8) = cocaïne, 🧨💯 = code misogyne incel. Témoignages d'ados recueillis dans une campagne de marque, à lire comme des exemples et non comme des règles générales.",
     href: 'https://www.youtube.com/watch?v=pNVuXXgvBVQ',
     source: 'Orange (vidéo officielle) · La Réclame',
   },
