@@ -75,7 +75,7 @@ const actualites: { titre: string; date: string; resume: string; href: string; s
     titre: 'Orange : « Connaissez-vous les codes de vos ados ? » (#ForGoodConnections)',
     date: 'Novembre 2026',
     resume:
-      "Campagne de sensibilisation lancée pour la Journée internationale de lutte contre le harcèlement à l'école. Selon une étude Orange x Ifop, près d'un parent sur deux ne reconnaît pas les emojis utilisés pour harceler. Dans le film, des ados décodent : 🐸 = « tu es moche », 🍜 = demande de nudes, 🎱 (boule n° 8) = cocaïne, 🧨💯 = code misogyne incel. Témoignages d'ados recueillis dans une campagne de marque, à lire comme des exemples et non comme des règles générales.",
+      "Campagne de sensibilisation lancée pour la Journée internationale de lutte contre le harcèlement à l'école. Selon une étude Orange x Ifop, près d'un parent sur deux ne reconnaît pas les emojis utilisés pour harceler. Dans le film, des ados décodent : 🐸 = « tu es moche », 🍜 = demande de nudes, 🎱 (boule n° 8) = cocaïne, 🧨💯 = code misogyne incel (variante répandue : 🧨🩸). Témoignages d'ados recueillis dans une campagne de marque, à lire comme des exemples et non comme des règles générales.",
     href: 'https://www.youtube.com/watch?v=pNVuXXgvBVQ',
     source: 'Orange (vidéo officielle) · La Réclame',
   },

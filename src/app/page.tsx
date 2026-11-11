@@ -52,8 +52,8 @@ export default async function Home() {
               </h2>
               <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                 La grenouille pour dire « t&apos;es moche », les nouilles pour demander
-                des nudes, la boule n° 8 pour la cocaïne, la dynamite + 💯 pour les codes
-                incel. Fiches mises à jour d&apos;après la campagne #ForGoodConnections
+                des nudes, la boule n° 8 pour la cocaïne, la dynamite + 💯 (ou + 🩸) pour les
+                codes incel. Fiches mises à jour d&apos;après la campagne #ForGoodConnections
                 d&apos;Orange (sources sur la{' '}
                 <Link href="/ressources" className="font-bold text-indigo-700 underline decoration-indigo-300 hover:decoration-indigo-700">page Ressources</Link>).
                 En cas de harcèlement, appelez le 3018.
